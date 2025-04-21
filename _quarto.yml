@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: .
+  output-dir: _temp_site
   render:
     - "*.qmd"
   resources:
