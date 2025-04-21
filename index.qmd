@@ -1,0 +1,55 @@
+---
+title: "Über Gewissheit - Wittgenstein ausgelegt"
+subtitle: "Seminar zur Entstehungsgeschichte und Editionsgeschichte"
+author: "Gerd Graßhoff"
+date: "2025-04-17"
+---
+
+Willkommen zum Seminar über Ludwig Wittgensteins "Über Gewissheit". Diese Sammlung enthält Materialien zur Entstehungsgeschichte, Editionsgeschichte und philosophischen Bedeutung von Wittgensteins letztem Werk.
+
+# Kapitel 1: Manuskript, Textquellen und Editionsgeschichte
+
+Dieses Kapitel behandelt die grundlegenden Aspekte von Wittgensteins "Über Gewissheit": die Manuskriptquellen, die Editionsgeschichte und den Zugang zu den Originalmaterialien.
+
+## Inhalt des ersten Kapitels
+
+1. **Die Werkausgabe und ihre Quellen**: Dokumentation der Wittgenstein-Werkausgabe und ihrer Quellen im Nachlass
+2. **Manuskriptquellen von "Über Gewissheit"**: Überblick über die originalen Manuskripte MS 172-177
+3. **Editionsgeschichte**: Erstveröffentlichung und Aufnahme in die Werkausgabe
+4. **Faksimile und Digitalisierung**: Zugänglichkeit der Original-Manuskripte über Wittgenstein Source
+5. **Der AI-Reporter**: Konzeption und Methodik
+
+## Über das Seminar
+
+Dieses Seminar behandelt Wittgensteins erkenntnistheoretische Untersuchungen in "Über Gewissheit". Wir werden die komplexe Entstehungsgeschichte des Textes betrachten und die philosophischen Ideen im Kontext von Wittgensteins Spätphilosophie diskutieren.
+
+Besondere Aufmerksamkeit wird den folgenden Aspekten gewidmet:
+
+- Die Reaktion Wittgensteins auf G.E. Moores Verteidigung des Common Sense
+- Die Entwicklung des Konzepts der "Angelsätze" oder Gewissheiten
+- Die sozialen und pragmatischen Aspekte von Wissen und Gewissheit
+- Die Verbindung zwischen den "Bemerkungen über die Farben" und "Über Gewissheit"
+
+## Der AI-Reporter: Eine experimentelle Methode der Dokumentation
+
+Der Begriff "Reportage" für die Sitzungszusammenfassungen leitet sich von einer experimentellen Neuentwicklung ab: dem AI-Reporter. Dieser erstellt auf Grundlage der Seminarmaterialien und Audioaufnahmen der Diskussionsverläufe Berichte, die inhaltlich möglichst genau die erzielten Thesen, Auslegungen, Varianten und Begründungen darstellen. Gegebenenfalls werden auch kontroverse Diskussionen dokumentiert.
+
+Bei den AI-Reportagen handelt es sich nicht um wortwörtliche Protokolle des Diskussionsverlaufs, sondern um inhaltliche Zusammenfassungen der Diskussionsthematik, ihrer Dynamik und der Entwicklung von Thesen und Textauslegungen. Dieser experimentelle Zugang hat das Ziel, die lebhafte thematische Auseinandersetzung mit Wittgensteins Spätschriften möglichst gehaltvoll und nachvollziehbar zu dokumentieren und für das weitere Nachstudium zu erhalten.
+
+# Kapitel 2: Seminar-Reportagen
+
+Dieses Kapitel enthält die Reportagen der einzelnen Seminarsitzungen, erstellt durch den AI-Reporter auf Basis der Diskussionen und Materialien.
+
+## Sitzungsberichte
+
+Die Reportagen geben die philosophischen Inhalte, Argumentationen und Diskussionspunkte der jeweiligen Sitzungen wieder. Sie folgen dem chronologischen Verlauf des Seminars und vertiefen bestimmte Aspekte von Wittgensteins "Über Gewissheit".
+
+## Formate
+
+Dieses Dokument steht in verschiedenen Formaten zur Verfügung:
+
+- **HTML**: Für die Anzeige im Browser mit interaktiven Funktionen
+- **PDF**: Für den Druck oder die Offline-Ansicht
+- **Typst**: Als moderne Alternative zu LaTeX mit klarem Quellcode und schnellem Rendering
+
+Um die Typst-Version anzuzeigen, können Sie den Befehl `quarto render --to typst` verwenden.

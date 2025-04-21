@@ -1,0 +1,28 @@
+---
+title: "Literaturverzeichnis"
+bibliography: references.bib
+nocite: |
+  @*
+suppress-bibliography: false
+---
+
+# Literaturverzeichnis
+
+Hier finden Sie eine vollständige Liste aller in diesem Seminar verwendeten Literatur. Die Einträge sind alphabetisch sortiert und umfassen sowohl Primärquellen von Wittgenstein als auch Sekundärliteratur zu "Über Gewissheit" und verwandten Themen.
+
+::: {#refs}
+:::
+
+## Weitere Ressourcen
+
+### Digitale Ressourcen
+
+- [Wittgenstein Source](http://www.wittgensteinsource.org) - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass
+- [Wittgenstein Archives at the University of Bergen (WAB)](http://wab.uib.no/) - Führendes Forschungszentrum für Wittgenstein-Studien
+- [Wittgenstein Advanced Search Tools](http://wab.uib.no/wab_discovery/) - Suchtools für den transkribierten Nachlass
+
+### Empfohlene Einführungen
+
+- Glock, H.-J. (1996). *A Wittgenstein Dictionary*. Oxford: Blackwell.
+- Hacker, P. M. S. (1996). *Wittgenstein's Place in Twentieth-Century Analytic Philosophy*. Oxford: Blackwell.
+- Schulte, J. (1989). *Wittgenstein: Eine Einführung*. Stuttgart: Reclam. 
