@@ -1,0 +1,68 @@
+---
+title: "Sitzung 1: Einführung in 'Über Gewissheit'"
+subtitle: "Entstehungskontext und editorische Kritik"
+date: "2025-04-24"
+---
+
+# Bericht: Seminar zu Wittgensteins "Über Gewissheit"
+
+## Einleitung und Themenstellung
+
+Vorkenntnisse über Wittgenstein, seine Texte und seine Philosophie sind für das Thema – Wittgensteins "Über Gewissheit" – erforderlich; die Anwesenheit von Teilnehmern mit solchen Vorkenntnissen ist daher vorteilhaft. Eine genaue Lektüre von Wittgensteins Ideen bildet die Vorgehensweise des Seminars, analog zu vorherigen Veranstaltungen.
+
+## Textgrundlage und Editorische Kritik
+
+Ein zentraler Punkt zu Beginn betrifft die Klärung der Natur des Textes "Über Gewissheit". Festzuhalten ist: Es handelt sich hierbei nicht um ein von Wittgenstein zur Publikation vorgesehenes Buch. Vielmehr sind es Notizen aus Wittgensteins letztem Lebensjahr (ca. 1950 bis April 1951), parallel in etwa vier Notizbüchern festgehalten. Diese erhaltenen Manuskripte (Ms) bilden die Grundlage der bekannten Publikation.
+
+Explizite Kritik betrifft die gängige publizierte Ausgabe (basierend auf der Edition von G.E.M. Anscombe/G.H. von Wright, 1969). Die Edition gilt als problematisch, da Teile des gedruckten Textes eher Interpretationen als Wittgensteins definitive Formulierungen darstellen könnten. Als signifikantes Beispiel dient Paragraph 6 (edierte Zählung): Wittgenstein strich die Formulierung "Geisteszustand" und ersetzte sie durch "Seelenzustand". Die Herausgeber behielten die gestrichene Fassung bei, vermutlich weil "Seelenzustand" im Englischen (state of soul) unüblich klingt. Die Argumentation lautet, Wittgenstein habe "Geisteszustand" bewusst vermieden, um nicht eine Deutung der Gewissheit als mentalen Zustand nahezulegen – eine Position, die er in den Philosophischen Untersuchungen ablehnt.
+
+Zudem ist die bekannte Nummerierung nach Paragraphen eine editorische Hinzufügung; die Manuskripte weisen diese nicht auf, auch wenn Wittgenstein seine Notizen oft in überarbeiteten, abschnittsartigen Blöcken verfasste.
+
+Für eine genaue Arbeit ist die Verwendung der zugänglichen Faksimile-Ausgaben und insbesondere der digitalen Transkriptionen (Bergen Electronic Edition, "Wittgenstein Source") unerlässlich, welche die Überarbeitungen kenntlich machen. Links zu diesen Ressourcen folgen auf einer noch einzurichtenden Webseite. Die Verwendung der publizierten Ausgaben ist für tiefgehende Analysen ungeeignet.
+
+## Philosophischer Kontext: Wittgenstein und G.E. Moore
+
+Der inhaltliche Ausgangspunkt von "Über Gewissheit" ist die Auseinandersetzung mit G.E. Moore. Es handelt sich hierbei nicht um eine reine Kontroverse. Vielmehr prägte eine langjährige, philosophische Kollaboration die Beziehung zwischen Wittgenstein und Moore.
+
+Moore (Wittgensteins Vorgänger in Cambridge, formal sein Doktorvater) war bekannt für seine "Common Sense"-Philosophie. Wittgenstein bezieht sich in "Über Gewissheit" insbesondere auf Moores Aufsatz "A Defence of Common Sense" (1925). Bereits 1912/13 notierte Moore als Student Wittgensteins Gedanken. Diese enge Zusammenarbeit und das gegenseitige Ringen um philosophische Probleme bilden den Hintergrund von "Über Gewissheit". Auch Moores spätere Arbeiten sind durch die Diskussionen mit Wittgenstein beeinflusst. Wittgenstein fand in Moore einen ebenbürtigen Gesprächspartner.
+
+## Das Kernproblem: Gewissheit und epistemische Fundamente
+
+Der erste Paragraph von "Über Gewissheit" ("Wenn du weißt, dass hier eine Hand ist, so geben wir dir alles Übrige zu") gilt als direkter Bezug auf Moores Geste (Handheben zur Demonstration von Gewissheit).
+
+Dies führt zum Kernproblem: der Suche nach fundamentalen, gewissen Sätzen als Basis des Wissens zur Vermeidung des infiniten Regresses epistemischer Rechtfertigung. Moore schlug Sätze des "Common Sense" als solche Fundamente vor ("Hier ist eine Hand"), deren Gewissheit durch den Common Sense verbürgt sei.
+
+Wittgenstein teilt Moores Überzeugung von der Notwendigkeit eines solchen Fundaments und der Undenkbarkeit von Wissen ohne Gewissheit (gegen fallibilistische Ansätze). Jedoch kritisiert Wittgenstein Moores Begründung und die Art der vorgeschlagenen Sätze fundamental.
+
+## Wittgensteins Ansatz und Kritik an traditionellen Konzepten
+
+Wittgensteins abweichende Herangehensweise umfasst:
+
+1. **Ablehnung psychologischer Deutungen:** Gewissheit ist *kein* Grad subjektiver Überzeugung oder ein mentaler Zustand. Eine probabilistische Deutung (Gewissheit = Wahrscheinlichkeit 1) gilt als unzutreffend.
+2. **Fokus auf Sprachgebrauch:** Entscheidend ist die Verwendung des Ausdrucks "gewiss" in der Sprachpraxis. Die Bedeutung ergibt sich aus dem Gebrauch (analog Philosophische Untersuchungen).
+3. **Problem des Bezugsobjekts:** Was ist der Gegenstand der Gewissheit? Die traditionelle Antwort (Moore, Frege) lautet "Propositionen". Wittgenstein stellt auch dies in Frage. Weder die physische Hand noch der konkrete Satz sei gewiss. Die Frage nach dem Bezugsobjekt der Gewissheit ist zentral und erfordert eine Neuausrichtung der Erkenntnistheorie. Wittgenstein verschiebt die Lösung vom Abstrakten ins Praktische, in die Gebrauchspraxis.
+
+## Geplanter Ablauf und Methodik
+
+* **Nächste Sitzung:** Lektüre und Diskussion von G.E. Moores "A Defence of Common Sense".
+* **Sitzung 3:** Lektüre der ersten ca. 20 Paragraphen von "Über Gewissheit" (mit Manuskript-Transkription); Ziel: Identifikation zentraler Begriffe/Themen (Regeln, Verstehen, Bedeutung, Wissen/Gewissheit, Kontext).
+* **Sitzung 4/5:** Rückgriff auf relevante Passagen der Philosophischen Untersuchungen.
+* **Rest des Semesters:** Fortgesetzte Lektüre/Diskussion von "Über Gewissheit".
+* **Methodik:** Primär Textarbeit (Exegese), Verzicht auf Sekundärliteratur anfangs. Ziel: Erarbeitung von Wittgensteins Position zur Gewissheit als Erkenntnisfundament.
+* **Abschlusssitzung:** Eine zusammenfassende Darstellung zu Wittgensteins Position (Gewissheit, Erkenntnis, Wissenschaft).
+
+## Organisatorisches und Leistungsanforderungen
+
+* **Materialien:** Links zu Moore-Text und Wittgenstein-Transkriptionen folgen. Vorbereitung der Texte durch Teilnehmer (Moore nächste Woche, Wittgenstein ab Sitzung 3).
+* **Teilnahme:** Regelmäßige Teilnahme und aktive Beteiligung bilden die Voraussetzung für den Teilnahmenachweis.
+* **Hausarbeit:** Möglich (ca. 10-14 Seiten). Besprechung von Thema/Anforderungen Mitte des Semesters. Fokus: Darstellung/Analyse von Wittgensteins Thesen in "Über Gewissheit"; Demonstration des Textverständnisses, nicht primär eigene Meinung.
+* **Betreuung:** Auch über das Semester hinaus nach rechtzeitiger Absprache möglich.
+
+## Diskussion und Klärungen
+
+* **Textzugang:** Thematisiert wurde das Auffinden der empfohlenen Transkriptionen. Stichworte sind "Bergen Edition", "Wittgenstein Source", MS 172. Genaue Links folgen. Für nächste Woche ist Moores Text relevant.
+* **Satz vs. Aussage (Proposition):** Wittgenstein spricht in seiner Spätphilosophie bewusst oft von "Sätzen" statt abstrakten "Aussagen/Propositionen". Dies hängt mit seiner Kritik an abstrakten Entitäten und der Betonung des sinnvollen Gebrauchs von Sätzen in der Praxis zusammen. Das Problem, wie verschiedene Sätze (auch sprachübergreifend) denselben "Sinn" ausdrücken können, auf den sich Gewissheit bezieht, ist eine Kernfrage. Wittgensteins Antwort liegt nicht in einer abstrakten "dritten Welt", sondern in der Untersuchung der *Gebrauchspraxis* und der *Gleichheit des Gebrauchs*.
+
+## Nächste Schritte
+
+Thema der nächsten Sitzung ist die Lektüre und Diskussion von G.E. Moores "A Defence of Common Sense".

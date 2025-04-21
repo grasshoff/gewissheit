@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: ./_build
+  render:
+    - "*.qmd"
+  resources:
+    - "img/**/*"
+    - "site_libs/**/*"
+  preview:
+    port: 3000
+    browser: true
+
+website:
+  title: "Über Gewissheit - Wittgenstein ausgelegt"
+  navbar:
+    background: "#002147"
+    search: true
+    left:
+      - text: "Startseite"
+        href: index.html
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - section: "**Überblick**"
+        contents:
+          - index.qmd
+      - section: "**Manuskript und Editionsgeschichte**"
+        contents:
+          - wittgenstein-werke.qmd
+          - faksimile.qmd
+          - ueber-gewissheit.qmd
+      - section: "**Seminar-Reportagen**"
+        contents:
+          - sitzung1.qmd
+      - section: "**Anhang**"
+        contents:
+          - references.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    fig-width: 8
+    fig-height: 6
+    fig-format: svg
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true
+    
+bibliography: references.bib

@@ -1,0 +1,53 @@
+---
+title: "Wittgenstein Source"
+author: "Dokumentation zu Wittgensteins Manuskripten"
+---
+
+# Wittgenstein Source: Zugang zu den Originalmanuskripten
+
+Die digitale Plattform "Wittgenstein Source" bietet freien Zugang zu Wittgensteins philosophischen Manuskripten, seinen sogenannten "Nachlass". Die Plattform wird vom Wittgenstein-Archiv der Universität Bergen (WAB) entwickelt und betrieben.
+
+## Kuratoren und technische Information
+
+Kuratoren: 
+- Alois Pichler (2009–, Wittgenstein Archives at the University of Bergen) 
+- Joseph Wang (2020–, Research Institute Brenner-Archiv, Innsbruck)
+
+Für die optimale Nutzung von Wittgenstein Source wird auf Windows-Systemen Chrome und auf Mac-Systemen Safari empfohlen.
+
+## Über die Plattform
+
+Wittgenstein Source bietet freien Zugang zu den primären Quellen von Wittgensteins Werk, einschließlich Faksimiles und Textausgaben seiner philosophischen Manuskripte. Das Projekt ist eine Kooperation zwischen dem Wittgenstein-Archiv der Universität Bergen (WAB), Joseph Wang, der Abteilung für digitale Dienste der Universitätsbibliothek Bergen und net7. 
+
+Die Startseite und der Header von Wittgenstein Source verwenden ein Foto von Ben Richards, das Wittgenstein 1947 in Swansea zeigt. Das Foto wird mit freundlicher Genehmigung von Michael Nedo und dem Cambridge Wittgenstein Archive verwendet.
+
+## Verfügbare Editionen
+
+Seit Oktober 2019 ist folgende Edition verfügbar:
+- (2015-) Wittgenstein Source Bergen Nachlass Edition
+
+## Faksimile MS 172
+
+Ein besonders interessantes Dokument im Kontext unserer Untersuchung zu "Über Gewissheit" ist das Manuskript MS 172, das die ersten 65 Paragraphen des später veröffentlichten Werks enthält.
+
+Das Faksimile des MS 172 ist unter folgendem Link zugänglich:
+[Wittgenstein Source MS 172](http://wittgensteinsource.org/Ms-172_f)
+
+![Beispielseite aus MS 172](img/ms172-1.jpg)
+
+## Bedeutung für die Forschung
+
+Die digitale Verfügbarkeit der Originalmanuskripte ermöglicht:
+
+1. Eine kritische Überprüfung der editorischen Entscheidungen der ursprünglichen Herausgeber
+2. Das Erkennen von Zusammenhängen zwischen Texten, die in der publizierten Fassung getrennt wurden
+3. Die Analyse von Wittgensteins Arbeitsprozess durch Überarbeitungen und Streichungen
+4. Ein tieferes Verständnis der chronologischen Entwicklung seiner Gedanken
+
+Die Nutzung dieser digitalen Ressourcen ist für eine gründliche Untersuchung von "Über Gewissheit" von unschätzbarem Wert, insbesondere um die künstliche Trennung zwischen den "Bemerkungen über die Farben" und "Über Gewissheit" zu überwinden.
+
+## Kontakt
+
+Bei Fragen zur Plattform wenden Sie sich an:
+- alois.pichler@uib.no 
+- Joseph.Wang@uibk.ac.at
