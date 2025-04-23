@@ -216,11 +216,11 @@
     ]
   },
   {
-    "objectID": "index.html#inhalt-des-ersten-kapitels",
-    "href": "index.html#inhalt-des-ersten-kapitels",
+    "objectID": "index.html#über-das-seminar",
+    "href": "index.html#über-das-seminar",
     "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "1.1 Inhalt des ersten Kapitels",
-    "text": "1.1 Inhalt des ersten Kapitels\n\nDie Werkausgabe und ihre Quellen: Dokumentation der Wittgenstein-Werkausgabe und ihrer Quellen im Nachlass\nManuskriptquellen von “Über Gewissheit”: Überblick über die originalen Manuskripte MS 172-177\nEditionsgeschichte: Erstveröffentlichung und Aufnahme in die Werkausgabe\nFaksimile und Digitalisierung: Zugänglichkeit der Original-Manuskripte über Wittgenstein Source\nDer AI-Reporter: Konzeption und Methodik",
+    "section": "1.1 Über das Seminar",
+    "text": "1.1 Über das Seminar\nDieses Seminar behandelt Wittgensteins erkenntnistheoretische Untersuchungen in “Über Gewissheit”. Wir werden die komplexe Entstehungsgeschichte des Textes betrachten und die philosophischen Ideen im Kontext von Wittgensteins Spätphilosophie diskutieren.\nBesondere Aufmerksamkeit wird den folgenden Aspekten gewidmet:\n\nDie Reaktion Wittgensteins auf G.E. Moores Verteidigung des Common Sense\nDie Entwicklung des Konzepts der “Angelsätze” oder Gewissheiten\nDie sozialen und pragmatischen Aspekte von Wissen und Gewissheit\nDie Verbindung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit”",
     "crumbs": [
       "Startseite",
       "**Überblick**",
@@ -228,11 +228,11 @@
     ]
   },
   {
-    "objectID": "index.html#über-das-seminar",
-    "href": "index.html#über-das-seminar",
+    "objectID": "index.html#quellen",
+    "href": "index.html#quellen",
     "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "1.2 Über das Seminar",
-    "text": "1.2 Über das Seminar\nDieses Seminar behandelt Wittgensteins erkenntnistheoretische Untersuchungen in “Über Gewissheit”. Wir werden die komplexe Entstehungsgeschichte des Textes betrachten und die philosophischen Ideen im Kontext von Wittgensteins Spätphilosophie diskutieren.\nBesondere Aufmerksamkeit wird den folgenden Aspekten gewidmet:\n\nDie Reaktion Wittgensteins auf G.E. Moores Verteidigung des Common Sense\nDie Entwicklung des Konzepts der “Angelsätze” oder Gewissheiten\nDie sozialen und pragmatischen Aspekte von Wissen und Gewissheit\nDie Verbindung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit”",
+    "section": "1.2 Quellen",
+    "text": "1.2 Quellen\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\nMoore: A Defence of Common Sense",
     "crumbs": [
       "Startseite",
       "**Überblick**",
@@ -245,30 +245,6 @@
     "title": "Über Gewissheit - Wittgenstein ausgelegt",
     "section": "1.3 Der AI-Reporter: Eine experimentelle Methode der Dokumentation",
     "text": "1.3 Der AI-Reporter: Eine experimentelle Methode der Dokumentation\nDer Begriff “Reportage” für die Sitzungszusammenfassungen leitet sich von einer experimentellen Neuentwicklung ab: dem AI-Reporter. Dieser erstellt auf Grundlage der Seminarmaterialien und Audioaufnahmen der Diskussionsverläufe Berichte, die inhaltlich möglichst genau die erzielten Thesen, Auslegungen, Varianten und Begründungen darstellen. Gegebenenfalls werden auch kontroverse Diskussionen dokumentiert.\nBei den AI-Reportagen handelt es sich nicht um wortwörtliche Protokolle des Diskussionsverlaufs, sondern um inhaltliche Zusammenfassungen der Diskussionsthematik, ihrer Dynamik und der Entwicklung von Thesen und Textauslegungen. Dieser experimentelle Zugang hat das Ziel, die lebhafte thematische Auseinandersetzung mit Wittgensteins Spätschriften möglichst gehaltvoll und nachvollziehbar zu dokumentieren und für das weitere Nachstudium zu erhalten.",
-    "crumbs": [
-      "Startseite",
-      "**Überblick**",
-      "Über Gewissheit - Wittgenstein ausgelegt"
-    ]
-  },
-  {
-    "objectID": "index.html#sitzungsberichte",
-    "href": "index.html#sitzungsberichte",
-    "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "2.1 Sitzungsberichte",
-    "text": "2.1 Sitzungsberichte\nDie Reportagen geben die philosophischen Inhalte, Argumentationen und Diskussionspunkte der jeweiligen Sitzungen wieder. Sie folgen dem chronologischen Verlauf des Seminars und vertiefen bestimmte Aspekte von Wittgensteins “Über Gewissheit”.",
-    "crumbs": [
-      "Startseite",
-      "**Überblick**",
-      "Über Gewissheit - Wittgenstein ausgelegt"
-    ]
-  },
-  {
-    "objectID": "index.html#formate",
-    "href": "index.html#formate",
-    "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "2.2 Formate",
-    "text": "2.2 Formate\nDieses Dokument steht in verschiedenen Formaten zur Verfügung:\n\nHTML: Für die Anzeige im Browser mit interaktiven Funktionen\nPDF: Für den Druck oder die Offline-Ansicht\nTypst: Als moderne Alternative zu LaTeX mit klarem Quellcode und schnellem Rendering\n\nUm die Typst-Version anzuzeigen, können Sie den Befehl quarto render --to typst verwenden.",
     "crumbs": [
       "Startseite",
       "**Überblick**",
@@ -364,19 +340,7 @@
     "href": "references.html",
     "title": "Literaturverzeichnis",
     "section": "",
-    "text": "Hier finden Sie eine vollständige Liste aller in diesem Seminar verwendeten Literatur. Die Einträge sind alphabetisch sortiert und umfassen sowohl Primärquellen von Wittgenstein als auch Sekundärliteratur zu “Über Gewissheit” und verwandten Themen.\n\n\nKeicher, Peter. 2001. “Die Wittgenstein-Werkausgabe Und Ihre Quellen Im Nachlaß.” ALWS - Papers of the International Wittgenstein Symposium 1 (1). https://wab.uib.no/agora/tools/alws/collection-1-issue-1-article-20.annotate.\n\n\nMalcolm, Norman. 1977. “Moore and Wittgenstein on the Sense of ’i Know’.” In Thought and Knowledge. Ithaca: Cornell University Press.\n\n\nMcGinn, Marie. 1989. “Sense and Certainty.” Proceedings of the Aristotelian Society 89: 235–52.\n\n\nMoore, G. E. 1925. “A Defence of Common Sense.” Edited by J. H. Muirhead. Contemporary British Philosophy.\n\n\nPichler, Alois. 2002. “Wittgenstein’s Nachlass: The Bergen Electronic Edition.” Nordic Wittgenstein Review.\n\n\nStroll, Avrum. 1994. Moore and Wittgenstein on Certainty. New York; Oxford: Oxford University Press.\n\n\nWittgenstein, Ludwig. 1953. Philosophical Investigations. Translated by G. E. M. Anscombe. Oxford: Basil Blackwell.\n\n\n———. 1969. On Certainty. Edited by G. E. M. Anscombe and G. H. von Wright. Oxford: Basil Blackwell.\n\n\n\n\n\n\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\n\n\n\n\n\nGlock, H.-J. (1996). A Wittgenstein Dictionary. Oxford: Blackwell.\nHacker, P. M. S. (1996). Wittgenstein’s Place in Twentieth-Century Analytic Philosophy. Oxford: Blackwell.\nSchulte, J. (1989). Wittgenstein: Eine Einführung. Stuttgart: Reclam.",
-    "crumbs": [
-      "Startseite",
-      "**Anhang**",
-      "Literaturverzeichnis"
-    ]
-  },
-  {
-    "objectID": "references.html#weitere-ressourcen",
-    "href": "references.html#weitere-ressourcen",
-    "title": "Literaturverzeichnis",
-    "section": "",
-    "text": "Wittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\n\n\n\n\n\nGlock, H.-J. (1996). A Wittgenstein Dictionary. Oxford: Blackwell.\nHacker, P. M. S. (1996). Wittgenstein’s Place in Twentieth-Century Analytic Philosophy. Oxford: Blackwell.\nSchulte, J. (1989). Wittgenstein: Eine Einführung. Stuttgart: Reclam.",
+    "text": "1 Literaturverzeichnis\nHier finden Sie eine vollständige Liste aller in diesem Seminar verwendeten Literatur. Die Einträge sind alphabetisch sortiert und umfassen sowohl Primärquellen von Wittgenstein als auch Sekundärliteratur zu “Über Gewissheit” und verwandten Themen.\n\n\nKeicher, Peter. 2001. “Die Wittgenstein-Werkausgabe Und Ihre Quellen Im Nachlaß.” ALWS - Papers of the International Wittgenstein Symposium 1 (1). https://wab.uib.no/agora/tools/alws/collection-1-issue-1-article-20.annotate.\n\n\nMalcolm, Norman. 1977. “Moore and Wittgenstein on the Sense of ’i Know’.” In Thought and Knowledge. Ithaca: Cornell University Press.\n\n\nMcGinn, Marie. 1989. “Sense and Certainty.” Proceedings of the Aristotelian Society 89: 235–52.\n\n\nMoore, G. E. 1925. “A Defence of Common Sense.” Edited by J. H. Muirhead. Contemporary British Philosophy.\n\n\nPichler, Alois. 2002. “Wittgenstein’s Nachlass: The Bergen Electronic Edition.” Nordic Wittgenstein Review.\n\n\nStroll, Avrum. 1994. Moore and Wittgenstein on Certainty. New York; Oxford: Oxford University Press.\n\n\nWittgenstein, Ludwig. 1953. Philosophical Investigations. Translated by G. E. M. Anscombe. Oxford: Basil Blackwell.\n\n\n———. 1969. On Certainty. Edited by G. E. M. Anscombe and G. H. von Wright. Oxford: Basil Blackwell.\n\n\nMoore: A Defence of Common Sense\n\n1.0.1 Digitale Ressourcen\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\n\n\n\n1.0.2 Empfohlene Einführungen\n\nGlock, H.-J. (1996). A Wittgenstein Dictionary. Oxford: Blackwell.\nHacker, P. M. S. (1996). Wittgenstein’s Place in Twentieth-Century Analytic Philosophy. Oxford: Blackwell.\nSchulte, J. (1989). Wittgenstein: Eine Einführung. Stuttgart: Reclam.",
     "crumbs": [
       "Startseite",
       "**Anhang**",
