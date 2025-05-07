@@ -43,8 +43,8 @@ body::before {
 
 /* Sidebar styling */
 /* Make sidebar wider */
-.sidebar-navigation {
-  width: 280px !important; /* Adjust as needed */
+#quarto-sidebar {
+  width: 320px !important; /* Adjust as needed */
 }
 
 .sidebar-title {
