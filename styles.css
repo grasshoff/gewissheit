@@ -48,7 +48,7 @@ body::before {
 }
 
 /* Adjust main content to accommodate wider sidebar */
-#quarto-content {
+main#quarto-document-content {
   margin-left: 320px; /* Should match sidebar width */
 }
 
