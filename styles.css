@@ -47,6 +47,11 @@ body::before {
   width: 320px !important; /* Adjust as needed */
 }
 
+/* Adjust main content to accommodate wider sidebar */
+#quarto-content {
+  margin-left: 320px; /* Should match sidebar width */
+}
+
 .sidebar-title {
   color: var(--oxford-blue);
 }
