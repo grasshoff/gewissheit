@@ -42,15 +42,19 @@ body::before {
 }
 
 /* Sidebar styling */
-/* Make sidebar wider */
+/* Make sidebar wider - REMOVING THIS MANUAL OVERRIDE */
+/*
 #quarto-sidebar {
-  width: 320px !important; /* Adjust as needed */
+  width: 320px !important; 
 }
+*/
 
-/* Adjust main content to accommodate wider sidebar */
+/* Adjust main content to accommodate wider sidebar - REMOVING THIS MANUAL OVERRIDE */
+/*
 main#quarto-document-content {
-  margin-left: 320px; /* Should match sidebar width */
+  margin-left: 320px; 
 }
+*/
 
 .sidebar-title {
   color: var(--oxford-blue);
