@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://grasshoff.github.io/gewissheit/xml-gewissheit.html</loc>
-    <lastmod>2025-05-24T12:52:44.049Z</lastmod>
+    <lastmod>2025-05-24T12:52:44.000Z</lastmod>
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/ug1-37.html</loc>
@@ -10,35 +10,39 @@
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/sitzung5r.html</loc>
-    <lastmod>2025-05-24T11:19:37.520Z</lastmod>
+    <lastmod>2025-05-24T11:19:37.000Z</lastmod>
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/sitzung5.html</loc>
-    <lastmod>2025-05-24T12:56:50.320Z</lastmod>
+    <lastmod>2025-05-24T12:56:50.000Z</lastmod>
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/sitzung3.html</loc>
     <lastmod>2025-05-07T17:20:08.000Z</lastmod>
   </url>
   <url>
-    <loc>https://grasshoff.github.io/gewissheit/sitzung1.html</loc>
-    <lastmod>2025-05-07T07:50:36.000Z</lastmod>
+    <loc>https://grasshoff.github.io/gewissheit/sitzung13.html</loc>
+    <lastmod>2025-07-16T07:57:46.000Z</lastmod>
   </url>
   <url>
-    <loc>https://grasshoff.github.io/gewissheit/index.html</loc>
-    <lastmod>2025-05-07T08:03:34.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://grasshoff.github.io/gewissheit/dialog.html</loc>
-    <lastmod>2025-05-21T09:57:19.000Z</lastmod>
+    <loc>https://grasshoff.github.io/gewissheit/references.html</loc>
+    <lastmod>2025-04-23T11:14:34.000Z</lastmod>
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/faksimile.html</loc>
     <lastmod>2025-04-21T11:36:38.000Z</lastmod>
   </url>
   <url>
-    <loc>https://grasshoff.github.io/gewissheit/references.html</loc>
-    <lastmod>2025-04-23T11:14:34.000Z</lastmod>
+    <loc>https://grasshoff.github.io/gewissheit/dialog.html</loc>
+    <lastmod>2025-05-21T09:57:19.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://grasshoff.github.io/gewissheit/index.html</loc>
+    <lastmod>2025-05-07T08:03:34.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://grasshoff.github.io/gewissheit/sitzung1.html</loc>
+    <lastmod>2025-05-07T07:50:36.000Z</lastmod>
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/sitzung2.html</loc>
@@ -46,7 +50,7 @@
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/sitzung4.html</loc>
-    <lastmod>2025-05-15T11:38:40.000Z</lastmod>
+    <lastmod>2025-05-15T11:49:17.000Z</lastmod>
   </url>
   <url>
     <loc>https://grasshoff.github.io/gewissheit/sitzung5old.html</loc>

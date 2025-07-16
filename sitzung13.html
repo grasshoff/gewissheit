@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Gerd Graßhoff">
-<meta name="dcterms.date" content="2025-04-17">
 
-<title>Über Gewissheit - Wittgenstein ausgelegt</title>
+<title>sitzung13 – Über Gewissheit - Wittgenstein ausgelegt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -70,6 +103,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -107,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><strong>Überblick</strong></a></li><li class="breadcrumb-item"><a href="./index.html">Über Gewissheit - Wittgenstein ausgelegt</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sitzung1.html"><strong>Seminar</strong></a></li><li class="breadcrumb-item"><a href="./sitzung13.html">Sitzung 13 (Abschluss)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -138,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Über Gewissheit - Wittgenstein ausgelegt</span></a>
   </div>
 </li>
@@ -214,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sitzung13.html" class="sidebar-item-text sidebar-link">
+  <a href="./sitzung13.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Sitzung 13 (Abschluss)</span></a>
   </div>
 </li>
@@ -253,84 +289,228 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#manuskript-textquellen-und-editionsgeschichte" id="toc-manuskript-textquellen-und-editionsgeschichte" class="nav-link active" data-scroll-target="#manuskript-textquellen-und-editionsgeschichte"><span class="header-section-number">1</span> Manuskript, Textquellen und Editionsgeschichte</a>
+  <li><a href="#sitzung-13-abschluss" id="toc-sitzung-13-abschluss" class="nav-link active" data-scroll-target="#sitzung-13-abschluss"><span class="header-section-number">1</span> Sitzung 13 (Abschluss)</a>
   <ul class="collapse">
-  <li><a href="#über-das-seminar" id="toc-über-das-seminar" class="nav-link" data-scroll-target="#über-das-seminar"><span class="header-section-number">1.1</span> Über das Seminar</a></li>
-  <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen"><span class="header-section-number">1.2</span> Quellen</a></li>
-  <li><a href="#der-ai-reporter-eine-experimentelle-methode-der-dokumentation" id="toc-der-ai-reporter-eine-experimentelle-methode-der-dokumentation" class="nav-link" data-scroll-target="#der-ai-reporter-eine-experimentelle-methode-der-dokumentation"><span class="header-section-number">1.3</span> Der AI-Reporter: Eine experimentelle Methode der Dokumentation</a></li>
+  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung"><span class="header-section-number">1.1</span> Zusammenfassung</a></li>
+  <li><a href="#rückblick-lektüre-lw" id="toc-rückblick-lektüre-lw" class="nav-link" data-scroll-target="#rückblick-lektüre-lw"><span class="header-section-number">1.2</span> Rückblick Lektüre LW</a>
+  <ul class="collapse">
+  <li><a href="#a-sprache-konvention-des-sprachspiels-unhintergehbarkeit-der-sprache" id="toc-a-sprache-konvention-des-sprachspiels-unhintergehbarkeit-der-sprache" class="nav-link" data-scroll-target="#a-sprache-konvention-des-sprachspiels-unhintergehbarkeit-der-sprache"><span class="header-section-number">1.2.1</span> (a) Sprache, Konvention des Sprachspiels, Unhintergehbarkeit der Sprache</a></li>
+  <li><a href="#b-regeln-zur-wissen" id="toc-b-regeln-zur-wissen" class="nav-link" data-scroll-target="#b-regeln-zur-wissen"><span class="header-section-number">1.2.2</span> (b) Regeln zur “Wissen”</a></li>
+  <li><a href="#c-philosophische-methode-der-gebrauchsübersicht" id="toc-c-philosophische-methode-der-gebrauchsübersicht" class="nav-link" data-scroll-target="#c-philosophische-methode-der-gebrauchsübersicht"><span class="header-section-number">1.2.3</span> (c) Philosophische Methode der Gebrauchsübersicht</a></li>
+  <li><a href="#d-grundregeln-zu-wissen" id="toc-d-grundregeln-zu-wissen" class="nav-link" data-scroll-target="#d-grundregeln-zu-wissen"><span class="header-section-number">1.2.4</span> (d) Grundregeln zu Wissen</a></li>
+  </ul></li>
+  <li><a href="#ai-lector-system-überblick" id="toc-ai-lector-system-überblick" class="nav-link" data-scroll-target="#ai-lector-system-überblick"><span class="header-section-number">1.3</span> AI-Lector System Überblick</a></li>
+  <li><a href="#paradigma-beispiel" id="toc-paradigma-beispiel" class="nav-link" data-scroll-target="#paradigma-beispiel"><span class="header-section-number">1.4</span> Paradigma-Beispiel</a></li>
+  <li><a href="#phrase-beispiel" id="toc-phrase-beispiel" class="nav-link" data-scroll-target="#phrase-beispiel"><span class="header-section-number">1.5</span> Phrase-Beispiel</a></li>
+  <li><a href="#interpretation-ug-600" id="toc-interpretation-ug-600" class="nav-link" data-scroll-target="#interpretation-ug-600"><span class="header-section-number">1.6</span> Interpretation UG 600</a></li>
+  <li><a href="#hermeneutik-template-instruction" id="toc-hermeneutik-template-instruction" class="nav-link" data-scroll-target="#hermeneutik-template-instruction"><span class="header-section-number">1.7</span> Hermeneutik Template Instruction</a></li>
+  <li><a href="#dataflow-diagramm" id="toc-dataflow-diagramm" class="nav-link" data-scroll-target="#dataflow-diagramm"><span class="header-section-number">1.8</span> Dataflow-Diagramm</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sitzung1.html"><strong>Seminar</strong></a></li><li class="breadcrumb-item"><a href="./sitzung13.html">Sitzung 13 (Abschluss)</a></li></ol></nav></header>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><strong>Überblick</strong></a></li><li class="breadcrumb-item"><a href="./index.html">Über Gewissheit - Wittgenstein ausgelegt</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Über Gewissheit - Wittgenstein ausgelegt</h1>
+
+
+
+<section id="sitzung-13-abschluss" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Sitzung 13 (Abschluss)</h1>
+<section id="zusammenfassung" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">1.1</span> Zusammenfassung</h2>
+<p>Diese Abschlusssitzung fasst die Lektüre von Wittgensteins “Über Gewissheit” (ÜG) zusammen und integriert das AI-Lector System für paradigmatische Analysen. Fokus auf Sprache, Wissen und philosophischer Methode.</p>
+</section>
+<section id="rückblick-lektüre-lw" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="rückblick-lektüre-lw"><span class="header-section-number">1.2</span> Rückblick Lektüre LW</h2>
+<section id="a-sprache-konvention-des-sprachspiels-unhintergehbarkeit-der-sprache" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="a-sprache-konvention-des-sprachspiels-unhintergehbarkeit-der-sprache"><span class="header-section-number">1.2.1</span> (a) Sprache, Konvention des Sprachspiels, Unhintergehbarkeit der Sprache</h3>
+<p><strong>Sprache</strong>: Konventionell geregelte Praxis.</p>
+<p><strong>Sprachspiel</strong>: Kontextuelle Verwendungsregeln.</p>
+<p><strong>Unhintergehbarkeit</strong>: Keine abstrakte Welt von Aussagen, sondern unhintergehbare Sprachpraxis.</p>
+</section>
+<section id="b-regeln-zur-wissen" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="b-regeln-zur-wissen"><span class="header-section-number">1.2.2</span> (b) Regeln zur “Wissen”</h3>
+<p><strong>Gebrauch</strong>: Wie verwenden wir “Wissen” im Alltag und philosophisch?</p>
+<p><strong>Regeln</strong>: Kontextabhängige Normen für Wissenszuschreibungen.</p>
+</section>
+<section id="c-philosophische-methode-der-gebrauchsübersicht" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="c-philosophische-methode-der-gebrauchsübersicht"><span class="header-section-number">1.2.3</span> (c) Philosophische Methode der Gebrauchsübersicht</h3>
+<p><strong>Methode</strong>: Übersichtliche Darstellung von Gebrauchsmustern.</p>
+<p><strong>ÜG</strong>: Kartierung von Wissensgebrauch in Gewissheitsfragen.</p>
+</section>
+<section id="d-grundregeln-zu-wissen" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="d-grundregeln-zu-wissen"><span class="header-section-number">1.2.4</span> (d) Grundregeln zu Wissen</h3>
+<p><strong>Überarbeitete Regeln</strong>: Basierend auf Wittgensteins Analyse in ÜG, wo Wissen als Gebrauch in Sprachspielen verstanden wird.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Gerd Graßhoff </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 17, 2025</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Willkommen zum Seminar über Ludwig Wittgensteins “Über Gewissheit”. Diese Sammlung enthält Materialien zur Entstehungsgeschichte, Editionsgeschichte und philosophischen Bedeutung von Wittgensteins letztem Werk - besser Manuskript.</p>
-<section id="manuskript-textquellen-und-editionsgeschichte" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Manuskript, Textquellen und Editionsgeschichte</h1>
-<p>Dieses Kapitel behandelt die grundlegenden Aspekte von Wittgensteins “Über Gewissheit”: die Manuskriptquellen, die Editionsgeschichte und den Zugang zu den Originalmaterialien.</p>
-<ol type="1">
-<li><strong>Die Werkausgabe und ihre Quellen</strong>: Dokumentation der Wittgenstein-Werkausgabe und ihrer Quellen im Nachlass</li>
-<li><strong>Manuskriptquellen von “Über Gewissheit”</strong>: Überblick über die originalen Manuskripte MS 172-177</li>
-<li><strong>Editionsgeschichte</strong>: Erstveröffentlichung und Aufnahme in die Werkausgabe</li>
-<li><strong>Faksimile und Digitalisierung</strong>: Zugänglichkeit der Original-Manuskripte über Wittgenstein Source</li>
-<li><strong>Der AI-Reporter</strong>: Konzeption und Methodik</li>
-</ol>
-<section id="über-das-seminar" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="über-das-seminar"><span class="header-section-number">1.1</span> Über das Seminar</h2>
-<p>Dieses Seminar behandelt Wittgensteins erkenntnistheoretische Untersuchungen in “Über Gewissheit”. Wir werden die komplexe Entstehungsgeschichte des Textes betrachten und die philosophischen Ideen im Kontext von Wittgensteins Spätphilosophie diskutieren.</p>
-<p>Besondere Aufmerksamkeit wird den folgenden Aspekten gewidmet:</p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Regeln des Wissens
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li>Die Reaktion Wittgensteins auf G.E. Moores Verteidigung des Common Sense</li>
-<li>Die Entwicklung des Konzepts der “Angelsätze” oder Gewissheiten</li>
-<li>Die sozialen und pragmatischen Aspekte von Wissen und Gewissheit</li>
-<li>Die Verbindung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit”</li>
+<li><p><strong>(1) Wissen impliziert Wahrheit</strong>: Wenn ich sage “Ich weiß p”, impliziert das, dass p wahr ist (vgl. ÜG §12).</p></li>
+<li><p><strong>(2) Wissen impliziert Überzeugung</strong>: Wissen erfordert subjektive Sicherheit ohne Zweifel (vgl. ÜG §194).</p></li>
+<li><p><strong>(3) Wissen impliziert Gründe</strong>: Es gibt objektive Rechtfertigung, aber keine unendliche Kette (vgl. ÜG §204).</p></li>
+<li><p><strong>(4) Wissen bezieht sich auf Sätze</strong>: Wissen gilt Aussagen in spezifischen Sprachspielen (vgl. ÜG §61).</p></li>
+<li><p><strong>(5) Wissen ist konventionell normiert</strong>: Bedeutung entsteht durch Gebrauch in der Sprachgemeinschaft (vgl. ÜG §279).</p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="ai-lector-system-überblick" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="ai-lector-system-überblick"><span class="header-section-number">1.3</span> AI-Lector System Überblick</h2>
+<p><strong>Definition</strong>: AI-Lector ist ein hermeneutisches Interpretationssystem für Wittgensteins “Über Gewissheit” (UG), das paradigmatische Textanalysen mit KI-gestützter Interpretation kombiniert.</p>
+<p><strong>Kernkomponenten</strong>:</p>
+<ul>
+<li><p><strong>Textobjekte</strong>: Paragraphen als basische Einheiten</p></li>
+<li><p><strong>Paradigma</strong>: Semantische Klassifikation von Textstellen</p></li>
+<li><p><strong>Interpretation</strong>: Hermeneutische Analyse basierend auf Paradigmen</p></li>
+</ul>
+<p><strong>Verwendung</strong>: System extrahiert paradigmatische Verwendungen einer Phrase und generiert kontextuelle Interpretationen.</p>
+</section>
+<section id="paradigma-beispiel" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="paradigma-beispiel"><span class="header-section-number">1.4</span> Paradigma-Beispiel</h2>
+<p><strong>Definition</strong>: Paradigma ist eine durch Beispiele charakterisierte Menge von Grundelementen aus der Textbasis.</p>
+<p><strong>Struktur</strong>: Partitioniert die Grundmenge (alle UG-Paragraphen) nach semantischen Kriterien.</p>
+<p><strong>Beispiel: Paradigma für “Hand”</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Programmausgabe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>Anzahl: 42
+Beispiele:
+§1: ... hier eine Hand ist ...
+§3: ... ob da eine Hand ist ...
+§4: ... ob das eine Hand ist ...</code></pre>
+</div>
+</div>
+</section>
+<section id="phrase-beispiel" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="phrase-beispiel"><span class="header-section-number">1.5</span> Phrase-Beispiel</h2>
+<p><strong>Definition</strong>: Phrase ist ein zentraler Ausdruck, dessen Gebrauch paradigmatisch analysiert wird.</p>
+<p><strong>Beispiel: Phrase “wissen”</strong></p>
+<ul>
+<li><p><strong>Paradigma-Größe</strong>: 103 Verwendungen</p></li>
+<li><p><strong>Analyse</strong>: Semantische Filterung auf wissenschaftlichen Kontext</p></li>
+</ul>
+<p><strong>Code-Beispiel</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>para <span class="op">=</span> Paradigma(<span class="st">"."</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>wissen <span class="op">=</span> para.partition(para.grund, fragment<span class="op">=</span><span class="st">"wissen"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Programmausgabe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>Anzahl: 103
+Beispiele:
+§1: Wenn du weißt ...
+§2: ... daß es so ist ...
+§6: ... daß ich weiß ...</code></pre>
+</div>
+</div>
+</section>
+<section id="interpretation-ug-600" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="interpretation-ug-600"><span class="header-section-number">1.6</span> Interpretation UG 600</h2>
+<p><strong>Originaltext UG 600</strong>:</p>
+<blockquote class="blockquote">
+<p>Was für einen Grund habe ich, Lehrbüchern der Experimentalphysik zu trauen? Ich habe keinen Grund, ihnen nicht zu trauen. Und ich traue ihnen. Ich weiß, wie solche Bücher entstehen – oder vielmehr, ich glaube es zu wissen. Ich habe einige Evidenz, aber sie reicht nicht weit und ist von sehr zerstreuter Art. Ich habe Dinge gehört, gesehen, gelesen. 22.4.51</p>
+</blockquote>
+<p><strong>AI-Lector Interpretation</strong>:</p>
+<p><strong>Bedeutung</strong>: Phrase “wissen” wird hier kontrastiert mit “glauben” im Kontext von Lehrbuchvertrauen.</p>
+<p><strong>Gebrauch</strong>: Zeigt Grenzen des Wissens durch Evidenzketten.</p>
+<p><strong>Praktischer Hinweis</strong>: Verwende “wissen” für direkt verifizierbare Tatsachen, “glauben” für überliefertes Wissen.</p>
+<p><strong>Referenzen</strong>:</p>
+<ul>
+<li><p>§600 (direkt)</p></li>
+<li><p>§601 (Evidenzketten)</p></li>
+<li><p>§602 (Wahrheit vs.&nbsp;Glaube)</p></li>
 </ul>
 </section>
-<section id="quellen" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="quellen"><span class="header-section-number">1.2</span> Quellen</h2>
+<section id="hermeneutik-template-instruction" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="hermeneutik-template-instruction"><span class="header-section-number">1.7</span> Hermeneutik Template Instruction</h2>
+<p><strong>Definition</strong>: Die hermeneutik.j2 Vorlage steuert die KI-gestützte Interpretation durch strukturierte Anweisungen mit Platzhaltern.</p>
+<p><strong>Template-Struktur</strong> (hermeneutik.j2):</p>
+<pre class="jinja2"><code>HERMENEUTISCHE ANALYSE - SPEZIFISCHE ANWEISUNGEN
+
+Paradigma-Inhalte:
+{{ paradigma_content }}
+
+Ausgewählter Text (Index {{ index }}):
+{{ selected_text }}
+
+Analyse-Phrase: {{ phrase }}
+
+AUFGABE:
+(a) Gib eine spezifische Interpretation der Phrase "{{ phrase }}" in der Verwendung des Index-Textes.
+(b) Verwende als Vergleich ähnliche Anwendungsweisen der Phrase aus den Paradigma-Inhalten.
+
+ANFORDERUNGEN:
+- Sehr knappe, erklärende deutsche Sprache
+- Ausschließlich die gegebene Terminologie verwenden
+- Keine Assoziationen oder anderen Jargon
+- Direkt auf den Punkt kommen
+- Nur den gegebenen Text verwenden
+- Keine allgemeinen philosophischen Ausführungen
+- Fokus auf die konkrete Verwendung der Phrase im Text</code></pre>
+<p><strong>Variablen</strong>:</p>
 <ul>
-<li><a href="http://www.wittgensteinsource.org">Wittgenstein Source</a> - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass</li>
-<li><a href="http://wab.uib.no/">Wittgenstein Archives at the University of Bergen (WAB)</a> - Führendes Forschungszentrum für Wittgenstein-Studien</li>
-<li><a href="http://wab.uib.no/wab_discovery/">Wittgenstein Advanced Search Tools</a> - Suchtools für den transkribierten Nachlass</li>
-<li><a href="https://www.ditext.com/moore/common-sense.html">Moore: A Defence of Common Sense</a></li>
+<li><p><strong>paradigma_content</strong>: Extrahierte paradigmatische Textstellen</p></li>
+<li><p><strong>selected_text</strong>: Spezifischer UG-Paragraph</p></li>
+<li><p><strong>index</strong>: Paragraph-Nummer</p></li>
+<li><p><strong>phrase</strong>: Zu analysierende Phrase</p></li>
 </ul>
 </section>
-<section id="der-ai-reporter-eine-experimentelle-methode-der-dokumentation" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="der-ai-reporter-eine-experimentelle-methode-der-dokumentation"><span class="header-section-number">1.3</span> Der AI-Reporter: Eine experimentelle Methode der Dokumentation</h2>
-<p>Der Begriff “Reportage” für die Sitzungszusammenfassungen leitet sich von einer experimentellen Neuentwicklung ab: dem AI-Reporter. Dieser erstellt auf Grundlage der Seminarmaterialien und Audioaufnahmen der Diskussionsverläufe Berichte, die inhaltlich möglichst genau die erzielten Thesen, Auslegungen, Varianten und Begründungen darstellen. Gegebenenfalls werden auch kontroverse Diskussionen dokumentiert.</p>
-<p>Bei den AI-Reportagen handelt es sich nicht um wortwörtliche Protokolle des Diskussionsverlaufs, sondern um inhaltliche Zusammenfassungen der Diskussionsthematik, ihrer Dynamik und der Entwicklung von Thesen und Textauslegungen. Dieser experimentelle Zugang hat das Ziel, die lebhafte thematische Auseinandersetzung mit Wittgensteins Spätschriften möglichst gehaltvoll und nachvollziehbar zu dokumentieren und für das weitere Nachstudium zu erhalten.</p>
+<section id="dataflow-diagramm" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="dataflow-diagramm"><span class="header-section-number">1.8</span> Dataflow-Diagramm</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Paradigma Extraction] --&gt; B[paradigma_content]
+    C[UG Text Selection] --&gt; D[selected_text &amp; index]
+    E[Phrase Input] --&gt; F[phrase]
+    B --&gt; G[Hermeneutik Template]
+    D --&gt; G
+    F --&gt; G
+    G --&gt; H[Interpretation Output]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Erklärung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Der Dataflow zeigt, wie Eingaben (Paradigma, Text, Phrase) in die Vorlage fließen und eine kohärente Interpretation erzeugen.</p>
+</div>
+</div>
 
 
 </section>

@@ -141,6 +141,286 @@
     ]
   },
   {
+    "objectID": "sitzung13.html",
+    "href": "sitzung13.html",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Diese Abschlusssitzung fasst die Lektüre von Wittgensteins “Über Gewissheit” (ÜG) zusammen und integriert das AI-Lector System für paradigmatische Analysen. Fokus auf Sprache, Wissen und philosophischer Methode.\n\n\n\n\n\nSprache: Konventionell geregelte Praxis.\nSprachspiel: Kontextuelle Verwendungsregeln.\nUnhintergehbarkeit: Keine abstrakte Welt von Aussagen, sondern unhintergehbare Sprachpraxis.\n\n\n\nGebrauch: Wie verwenden wir “Wissen” im Alltag und philosophisch?\nRegeln: Kontextabhängige Normen für Wissenszuschreibungen.\n\n\n\nMethode: Übersichtliche Darstellung von Gebrauchsmustern.\nÜG: Kartierung von Wissensgebrauch in Gewissheitsfragen.\n\n\n\nÜberarbeitete Regeln: Basierend auf Wittgensteins Analyse in ÜG, wo Wissen als Gebrauch in Sprachspielen verstanden wird.\n\n\n\n\n\n\nNoteRegeln des Wissens\n\n\n\n\n(1) Wissen impliziert Wahrheit: Wenn ich sage “Ich weiß p”, impliziert das, dass p wahr ist (vgl. ÜG §12).\n(2) Wissen impliziert Überzeugung: Wissen erfordert subjektive Sicherheit ohne Zweifel (vgl. ÜG §194).\n(3) Wissen impliziert Gründe: Es gibt objektive Rechtfertigung, aber keine unendliche Kette (vgl. ÜG §204).\n(4) Wissen bezieht sich auf Sätze: Wissen gilt Aussagen in spezifischen Sprachspielen (vgl. ÜG §61).\n(5) Wissen ist konventionell normiert: Bedeutung entsteht durch Gebrauch in der Sprachgemeinschaft (vgl. ÜG §279).\n\n\n\n\n\n\n\nDefinition: AI-Lector ist ein hermeneutisches Interpretationssystem für Wittgensteins “Über Gewissheit” (UG), das paradigmatische Textanalysen mit KI-gestützter Interpretation kombiniert.\nKernkomponenten:\n\nTextobjekte: Paragraphen als basische Einheiten\nParadigma: Semantische Klassifikation von Textstellen\nInterpretation: Hermeneutische Analyse basierend auf Paradigmen\n\nVerwendung: System extrahiert paradigmatische Verwendungen einer Phrase und generiert kontextuelle Interpretationen.\n\n\n\nDefinition: Paradigma ist eine durch Beispiele charakterisierte Menge von Grundelementen aus der Textbasis.\nStruktur: Partitioniert die Grundmenge (alle UG-Paragraphen) nach semantischen Kriterien.\nBeispiel: Paradigma für “Hand”\n\n\n\n\n\n\nNoteProgrammausgabe\n\n\n\nAnzahl: 42\nBeispiele:\n§1: ... hier eine Hand ist ...\n§3: ... ob da eine Hand ist ...\n§4: ... ob das eine Hand ist ...\n\n\n\n\n\nDefinition: Phrase ist ein zentraler Ausdruck, dessen Gebrauch paradigmatisch analysiert wird.\nBeispiel: Phrase “wissen”\n\nParadigma-Größe: 103 Verwendungen\nAnalyse: Semantische Filterung auf wissenschaftlichen Kontext\n\nCode-Beispiel:\npara = Paradigma(\".\")\nwissen = para.partition(para.grund, fragment=\"wissen\")\n\n\n\n\n\n\nNoteProgrammausgabe\n\n\n\nAnzahl: 103\nBeispiele:\n§1: Wenn du weißt ...\n§2: ... daß es so ist ...\n§6: ... daß ich weiß ...\n\n\n\n\n\nOriginaltext UG 600:\n\nWas für einen Grund habe ich, Lehrbüchern der Experimentalphysik zu trauen? Ich habe keinen Grund, ihnen nicht zu trauen. Und ich traue ihnen. Ich weiß, wie solche Bücher entstehen – oder vielmehr, ich glaube es zu wissen. Ich habe einige Evidenz, aber sie reicht nicht weit und ist von sehr zerstreuter Art. Ich habe Dinge gehört, gesehen, gelesen. 22.4.51\n\nAI-Lector Interpretation:\nBedeutung: Phrase “wissen” wird hier kontrastiert mit “glauben” im Kontext von Lehrbuchvertrauen.\nGebrauch: Zeigt Grenzen des Wissens durch Evidenzketten.\nPraktischer Hinweis: Verwende “wissen” für direkt verifizierbare Tatsachen, “glauben” für überliefertes Wissen.\nReferenzen:\n\n§600 (direkt)\n§601 (Evidenzketten)\n§602 (Wahrheit vs. Glaube)\n\n\n\n\nDefinition: Die hermeneutik.j2 Vorlage steuert die KI-gestützte Interpretation durch strukturierte Anweisungen mit Platzhaltern.\nTemplate-Struktur (hermeneutik.j2):\nHERMENEUTISCHE ANALYSE - SPEZIFISCHE ANWEISUNGEN\n\nParadigma-Inhalte:\n{{ paradigma_content }}\n\nAusgewählter Text (Index {{ index }}):\n{{ selected_text }}\n\nAnalyse-Phrase: {{ phrase }}\n\nAUFGABE:\n(a) Gib eine spezifische Interpretation der Phrase \"{{ phrase }}\" in der Verwendung des Index-Textes.\n(b) Verwende als Vergleich ähnliche Anwendungsweisen der Phrase aus den Paradigma-Inhalten.\n\nANFORDERUNGEN:\n- Sehr knappe, erklärende deutsche Sprache\n- Ausschließlich die gegebene Terminologie verwenden\n- Keine Assoziationen oder anderen Jargon\n- Direkt auf den Punkt kommen\n- Nur den gegebenen Text verwenden\n- Keine allgemeinen philosophischen Ausführungen\n- Fokus auf die konkrete Verwendung der Phrase im Text\nVariablen:\n\nparadigma_content: Extrahierte paradigmatische Textstellen\nselected_text: Spezifischer UG-Paragraph\nindex: Paragraph-Nummer\nphrase: Zu analysierende Phrase\n\n\n\n\n\n\n\n\n\nflowchart LR\n    A[Paradigma Extraction] --&gt; B[paradigma_content]\n    C[UG Text Selection] --&gt; D[selected_text & index]\n    E[Phrase Input] --&gt; F[phrase]\n    B --&gt; G[Hermeneutik Template]\n    D --&gt; G\n    F --&gt; G\n    G --&gt; H[Interpretation Output]\n\n\n\n\n\n\n\n\n\n\n\n\nNoteErklärung\n\n\n\nDer Dataflow zeigt, wie Eingaben (Paradigma, Text, Phrase) in die Vorlage fließen und eine kohärente Interpretation erzeugen.",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#zusammenfassung",
+    "href": "sitzung13.html#zusammenfassung",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Diese Abschlusssitzung fasst die Lektüre von Wittgensteins “Über Gewissheit” (ÜG) zusammen und integriert das AI-Lector System für paradigmatische Analysen. Fokus auf Sprache, Wissen und philosophischer Methode.",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#rückblick-lektüre-lw",
+    "href": "sitzung13.html#rückblick-lektüre-lw",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Sprache: Konventionell geregelte Praxis.\nSprachspiel: Kontextuelle Verwendungsregeln.\nUnhintergehbarkeit: Keine abstrakte Welt von Aussagen, sondern unhintergehbare Sprachpraxis.\n\n\n\nGebrauch: Wie verwenden wir “Wissen” im Alltag und philosophisch?\nRegeln: Kontextabhängige Normen für Wissenszuschreibungen.\n\n\n\nMethode: Übersichtliche Darstellung von Gebrauchsmustern.\nÜG: Kartierung von Wissensgebrauch in Gewissheitsfragen.\n\n\n\nÜberarbeitete Regeln: Basierend auf Wittgensteins Analyse in ÜG, wo Wissen als Gebrauch in Sprachspielen verstanden wird.\n\n\n\n\n\n\nNoteRegeln des Wissens\n\n\n\n\n(1) Wissen impliziert Wahrheit: Wenn ich sage “Ich weiß p”, impliziert das, dass p wahr ist (vgl. ÜG §12).\n(2) Wissen impliziert Überzeugung: Wissen erfordert subjektive Sicherheit ohne Zweifel (vgl. ÜG §194).\n(3) Wissen impliziert Gründe: Es gibt objektive Rechtfertigung, aber keine unendliche Kette (vgl. ÜG §204).\n(4) Wissen bezieht sich auf Sätze: Wissen gilt Aussagen in spezifischen Sprachspielen (vgl. ÜG §61).\n(5) Wissen ist konventionell normiert: Bedeutung entsteht durch Gebrauch in der Sprachgemeinschaft (vgl. ÜG §279).",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#ai-lector-system-überblick",
+    "href": "sitzung13.html#ai-lector-system-überblick",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Definition: AI-Lector ist ein hermeneutisches Interpretationssystem für Wittgensteins “Über Gewissheit” (UG), das paradigmatische Textanalysen mit KI-gestützter Interpretation kombiniert.\nKernkomponenten:\n\nTextobjekte: Paragraphen als basische Einheiten\nParadigma: Semantische Klassifikation von Textstellen\nInterpretation: Hermeneutische Analyse basierend auf Paradigmen\n\nVerwendung: System extrahiert paradigmatische Verwendungen einer Phrase und generiert kontextuelle Interpretationen.",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#paradigma-beispiel",
+    "href": "sitzung13.html#paradigma-beispiel",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Definition: Paradigma ist eine durch Beispiele charakterisierte Menge von Grundelementen aus der Textbasis.\nStruktur: Partitioniert die Grundmenge (alle UG-Paragraphen) nach semantischen Kriterien.\nBeispiel: Paradigma für “Hand”\n\n\n\n\n\n\nNoteProgrammausgabe\n\n\n\nAnzahl: 42\nBeispiele:\n§1: ... hier eine Hand ist ...\n§3: ... ob da eine Hand ist ...\n§4: ... ob das eine Hand ist ...",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#phrase-beispiel",
+    "href": "sitzung13.html#phrase-beispiel",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Definition: Phrase ist ein zentraler Ausdruck, dessen Gebrauch paradigmatisch analysiert wird.\nBeispiel: Phrase “wissen”\n\nParadigma-Größe: 103 Verwendungen\nAnalyse: Semantische Filterung auf wissenschaftlichen Kontext\n\nCode-Beispiel:\npara = Paradigma(\".\")\nwissen = para.partition(para.grund, fragment=\"wissen\")\n\n\n\n\n\n\nNoteProgrammausgabe\n\n\n\nAnzahl: 103\nBeispiele:\n§1: Wenn du weißt ...\n§2: ... daß es so ist ...\n§6: ... daß ich weiß ...",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#interpretation-ug-600",
+    "href": "sitzung13.html#interpretation-ug-600",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Originaltext UG 600:\n\nWas für einen Grund habe ich, Lehrbüchern der Experimentalphysik zu trauen? Ich habe keinen Grund, ihnen nicht zu trauen. Und ich traue ihnen. Ich weiß, wie solche Bücher entstehen – oder vielmehr, ich glaube es zu wissen. Ich habe einige Evidenz, aber sie reicht nicht weit und ist von sehr zerstreuter Art. Ich habe Dinge gehört, gesehen, gelesen. 22.4.51\n\nAI-Lector Interpretation:\nBedeutung: Phrase “wissen” wird hier kontrastiert mit “glauben” im Kontext von Lehrbuchvertrauen.\nGebrauch: Zeigt Grenzen des Wissens durch Evidenzketten.\nPraktischer Hinweis: Verwende “wissen” für direkt verifizierbare Tatsachen, “glauben” für überliefertes Wissen.\nReferenzen:\n\n§600 (direkt)\n§601 (Evidenzketten)\n§602 (Wahrheit vs. Glaube)",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#hermeneutik-template-instruction",
+    "href": "sitzung13.html#hermeneutik-template-instruction",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "Definition: Die hermeneutik.j2 Vorlage steuert die KI-gestützte Interpretation durch strukturierte Anweisungen mit Platzhaltern.\nTemplate-Struktur (hermeneutik.j2):\nHERMENEUTISCHE ANALYSE - SPEZIFISCHE ANWEISUNGEN\n\nParadigma-Inhalte:\n{{ paradigma_content }}\n\nAusgewählter Text (Index {{ index }}):\n{{ selected_text }}\n\nAnalyse-Phrase: {{ phrase }}\n\nAUFGABE:\n(a) Gib eine spezifische Interpretation der Phrase \"{{ phrase }}\" in der Verwendung des Index-Textes.\n(b) Verwende als Vergleich ähnliche Anwendungsweisen der Phrase aus den Paradigma-Inhalten.\n\nANFORDERUNGEN:\n- Sehr knappe, erklärende deutsche Sprache\n- Ausschließlich die gegebene Terminologie verwenden\n- Keine Assoziationen oder anderen Jargon\n- Direkt auf den Punkt kommen\n- Nur den gegebenen Text verwenden\n- Keine allgemeinen philosophischen Ausführungen\n- Fokus auf die konkrete Verwendung der Phrase im Text\nVariablen:\n\nparadigma_content: Extrahierte paradigmatische Textstellen\nselected_text: Spezifischer UG-Paragraph\nindex: Paragraph-Nummer\nphrase: Zu analysierende Phrase",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "sitzung13.html#dataflow-diagramm",
+    "href": "sitzung13.html#dataflow-diagramm",
+    "title": "1 Sitzung 13 (Abschluss)",
+    "section": "",
+    "text": "flowchart LR\n    A[Paradigma Extraction] --&gt; B[paradigma_content]\n    C[UG Text Selection] --&gt; D[selected_text & index]\n    E[Phrase Input] --&gt; F[phrase]\n    B --&gt; G[Hermeneutik Template]\n    D --&gt; G\n    F --&gt; G\n    G --&gt; H[Interpretation Output]\n\n\n\n\n\n\n\n\n\n\n\n\nNoteErklärung\n\n\n\nDer Dataflow zeigt, wie Eingaben (Paradigma, Text, Phrase) in die Vorlage fließen und eine kohärente Interpretation erzeugen.",
+    "crumbs": [
+      "Startseite",
+      "**Seminar**",
+      "Sitzung 13 (Abschluss)"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Literaturverzeichnis",
+    "section": "",
+    "text": "1 Literaturverzeichnis\nHier finden Sie eine vollständige Liste aller in diesem Seminar verwendeten Literatur. Die Einträge sind alphabetisch sortiert und umfassen sowohl Primärquellen von Wittgenstein als auch Sekundärliteratur zu “Über Gewissheit” und verwandten Themen.\n\n\nKeicher, Peter. 2001. “Die Wittgenstein-Werkausgabe Und Ihre Quellen Im Nachlaß.” ALWS - Papers of the International Wittgenstein Symposium 1 (1). https://wab.uib.no/agora/tools/alws/collection-1-issue-1-article-20.annotate.\n\n\nMalcolm, Norman. 1977. “Moore and Wittgenstein on the Sense of ’i Know’.” In Thought and Knowledge. Ithaca: Cornell University Press.\n\n\nMcGinn, Marie. 1989. “Sense and Certainty.” Proceedings of the Aristotelian Society 89: 235–52.\n\n\nMoore, G. E. 1925. “A Defence of Common Sense.” Edited by J. H. Muirhead. Contemporary British Philosophy.\n\n\nPichler, Alois. 2002. “Wittgenstein’s Nachlass: The Bergen Electronic Edition.” Nordic Wittgenstein Review.\n\n\nStroll, Avrum. 1994. Moore and Wittgenstein on Certainty. New York; Oxford: Oxford University Press.\n\n\nWittgenstein, Ludwig. 1953. Philosophical Investigations. Translated by G. E. M. Anscombe. Oxford: Basil Blackwell.\n\n\n———. 1969. On Certainty. Edited by G. E. M. Anscombe and G. H. von Wright. Oxford: Basil Blackwell.\n\n\nMoore: A Defence of Common Sense\n\n1.0.1 Digitale Ressourcen\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\n\n\n\n1.0.2 Empfohlene Einführungen\n\nGlock, H.-J. (1996). A Wittgenstein Dictionary. Oxford: Blackwell.\nHacker, P. M. S. (1996). Wittgenstein’s Place in Twentieth-Century Analytic Philosophy. Oxford: Blackwell.\nSchulte, J. (1989). Wittgenstein: Eine Einführung. Stuttgart: Reclam.",
+    "crumbs": [
+      "Startseite",
+      "**Anhang**",
+      "Literaturverzeichnis"
+    ]
+  },
+  {
+    "objectID": "faksimile.html",
+    "href": "faksimile.html",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Die digitale Plattform “Wittgenstein Source” bietet freien Zugang zu Wittgensteins philosophischen Manuskripten, seinen sogenannten “Nachlass”. Die Plattform wird vom Wittgenstein-Archiv der Universität Bergen (WAB) entwickelt und betrieben.\n\n\nKuratoren: - Alois Pichler (2009–, Wittgenstein Archives at the University of Bergen) - Joseph Wang (2020–, Research Institute Brenner-Archiv, Innsbruck)\nFür die optimale Nutzung von Wittgenstein Source wird auf Windows-Systemen Chrome und auf Mac-Systemen Safari empfohlen.\n\n\n\nWittgenstein Source bietet freien Zugang zu den primären Quellen von Wittgensteins Werk, einschließlich Faksimiles und Textausgaben seiner philosophischen Manuskripte. Das Projekt ist eine Kooperation zwischen dem Wittgenstein-Archiv der Universität Bergen (WAB), Joseph Wang, der Abteilung für digitale Dienste der Universitätsbibliothek Bergen und net7.\nDie Startseite und der Header von Wittgenstein Source verwenden ein Foto von Ben Richards, das Wittgenstein 1947 in Swansea zeigt. Das Foto wird mit freundlicher Genehmigung von Michael Nedo und dem Cambridge Wittgenstein Archive verwendet.\n\n\n\nSeit Oktober 2019 ist folgende Edition verfügbar: - (2015-) Wittgenstein Source Bergen Nachlass Edition\n\n\n\nEin besonders interessantes Dokument im Kontext unserer Untersuchung zu “Über Gewissheit” ist das Manuskript MS 172, das die ersten 65 Paragraphen des später veröffentlichten Werks enthält.\nDas Faksimile des MS 172 ist unter folgendem Link zugänglich: Wittgenstein Source MS 172\n\n\n\nBeispielseite aus MS 172\n\n\n\n\n\nDie digitale Verfügbarkeit der Originalmanuskripte ermöglicht:\n\nEine kritische Überprüfung der editorischen Entscheidungen der ursprünglichen Herausgeber\nDas Erkennen von Zusammenhängen zwischen Texten, die in der publizierten Fassung getrennt wurden\nDie Analyse von Wittgensteins Arbeitsprozess durch Überarbeitungen und Streichungen\nEin tieferes Verständnis der chronologischen Entwicklung seiner Gedanken\n\nDie Nutzung dieser digitalen Ressourcen ist für eine gründliche Untersuchung von “Über Gewissheit” von unschätzbarem Wert, insbesondere um die künstliche Trennung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit” zu überwinden.\n\n\n\nBei Fragen zur Plattform wenden Sie sich an: - alois.pichler@uib.no - Joseph.Wang@uibk.ac.at",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "faksimile.html#kuratoren-und-technische-information",
+    "href": "faksimile.html#kuratoren-und-technische-information",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Kuratoren: - Alois Pichler (2009–, Wittgenstein Archives at the University of Bergen) - Joseph Wang (2020–, Research Institute Brenner-Archiv, Innsbruck)\nFür die optimale Nutzung von Wittgenstein Source wird auf Windows-Systemen Chrome und auf Mac-Systemen Safari empfohlen.",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "faksimile.html#über-die-plattform",
+    "href": "faksimile.html#über-die-plattform",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Wittgenstein Source bietet freien Zugang zu den primären Quellen von Wittgensteins Werk, einschließlich Faksimiles und Textausgaben seiner philosophischen Manuskripte. Das Projekt ist eine Kooperation zwischen dem Wittgenstein-Archiv der Universität Bergen (WAB), Joseph Wang, der Abteilung für digitale Dienste der Universitätsbibliothek Bergen und net7.\nDie Startseite und der Header von Wittgenstein Source verwenden ein Foto von Ben Richards, das Wittgenstein 1947 in Swansea zeigt. Das Foto wird mit freundlicher Genehmigung von Michael Nedo und dem Cambridge Wittgenstein Archive verwendet.",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "faksimile.html#verfügbare-editionen",
+    "href": "faksimile.html#verfügbare-editionen",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Seit Oktober 2019 ist folgende Edition verfügbar: - (2015-) Wittgenstein Source Bergen Nachlass Edition",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "faksimile.html#faksimile-ms-172",
+    "href": "faksimile.html#faksimile-ms-172",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Ein besonders interessantes Dokument im Kontext unserer Untersuchung zu “Über Gewissheit” ist das Manuskript MS 172, das die ersten 65 Paragraphen des später veröffentlichten Werks enthält.\nDas Faksimile des MS 172 ist unter folgendem Link zugänglich: Wittgenstein Source MS 172\n\n\n\nBeispielseite aus MS 172",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "faksimile.html#bedeutung-für-die-forschung",
+    "href": "faksimile.html#bedeutung-für-die-forschung",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Die digitale Verfügbarkeit der Originalmanuskripte ermöglicht:\n\nEine kritische Überprüfung der editorischen Entscheidungen der ursprünglichen Herausgeber\nDas Erkennen von Zusammenhängen zwischen Texten, die in der publizierten Fassung getrennt wurden\nDie Analyse von Wittgensteins Arbeitsprozess durch Überarbeitungen und Streichungen\nEin tieferes Verständnis der chronologischen Entwicklung seiner Gedanken\n\nDie Nutzung dieser digitalen Ressourcen ist für eine gründliche Untersuchung von “Über Gewissheit” von unschätzbarem Wert, insbesondere um die künstliche Trennung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit” zu überwinden.",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "faksimile.html#kontakt",
+    "href": "faksimile.html#kontakt",
+    "title": "Wittgenstein Source",
+    "section": "",
+    "text": "Bei Fragen zur Plattform wenden Sie sich an: - alois.pichler@uib.no - Joseph.Wang@uibk.ac.at",
+    "crumbs": [
+      "Startseite",
+      "**Manuskript und Editionsgeschichte**",
+      "Wittgenstein Source"
+    ]
+  },
+  {
+    "objectID": "dialog.html",
+    "href": "dialog.html",
+    "title": "Dialog zur Interpretation von ÜG §10",
+    "section": "",
+    "text": "Ich weiß, daß hier ein kranker Mensch liegt? Unsinn! Ich sitze an seinem Bett, schaue aufmerksam in seine Züge. – So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn. So wenig wie die: »Ich bin hier«, die ich doch jeden Moment gebrauchen könnte, wenn sich die passende Gelegenheit dazu ergäbe. – So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten? »2 × 2 = 4« ist ein wahrer Satz der Arithmetik – nicht »bei bestimmten Gelegenheiten« noch »immer« – aber die Laut- oder Schriftzeichen »2 × 2 = 4« könnten im Chinesischen eine andere Bedeutung haben oder aufgelegter Unsinn sein, woraus man sieht: nur im Gebrauch hat der Satz Sinn. Und »Ich weiß, daß hier ein Kranker liegt«, in der unpassenden Situation gebraucht, erscheint nur darum nicht als Unsinn, vielmehr als Selbstverständlichkeit, weil man sich verhältnismäßig leicht eine für ihn passende Situation vorstellen kann und weil man meint, die Worte »Ich weiß, daß …« seien überall am Platz, wo es keinen Zweifel gibt (also auch dort, wo der Ausdruck des Zweifels verständlich wäre)."
+  },
+  {
+    "objectID": "dialog.html#textgrundlage-wittgenstein-üg-10",
+    "href": "dialog.html#textgrundlage-wittgenstein-üg-10",
+    "title": "Dialog zur Interpretation von ÜG §10",
+    "section": "",
+    "text": "Ich weiß, daß hier ein kranker Mensch liegt? Unsinn! Ich sitze an seinem Bett, schaue aufmerksam in seine Züge. – So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn. So wenig wie die: »Ich bin hier«, die ich doch jeden Moment gebrauchen könnte, wenn sich die passende Gelegenheit dazu ergäbe. – So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten? »2 × 2 = 4« ist ein wahrer Satz der Arithmetik – nicht »bei bestimmten Gelegenheiten« noch »immer« – aber die Laut- oder Schriftzeichen »2 × 2 = 4« könnten im Chinesischen eine andere Bedeutung haben oder aufgelegter Unsinn sein, woraus man sieht: nur im Gebrauch hat der Satz Sinn. Und »Ich weiß, daß hier ein Kranker liegt«, in der unpassenden Situation gebraucht, erscheint nur darum nicht als Unsinn, vielmehr als Selbstverständlichkeit, weil man sich verhältnismäßig leicht eine für ihn passende Situation vorstellen kann und weil man meint, die Worte »Ich weiß, daß …« seien überall am Platz, wo es keinen Zweifel gibt (also auch dort, wo der Ausdruck des Zweifels verständlich wäre)."
+  },
+  {
+    "objectID": "dialog.html#dialog-zur-analyse",
+    "href": "dialog.html#dialog-zur-analyse",
+    "title": "Dialog zur Interpretation von ÜG §10",
+    "section": "2 Dialog zur Analyse",
+    "text": "2 Dialog zur Analyse\n\n2.1 Begriffsklärung: Sprachlicher Ausdruck\nQuery: Die Aufgabe, einen “sprachlichen Ausdruck” zu identifizieren, verlangt Klärung. So ist er für den Zweck vollkommen unbrauchbar. Erstens: Es geht um sprachliche Ausdrücke, die von Personen in Akten des Sprechens geäußert werden, d.h. die von anderen sinnlich wahrgenommen werden. Diese sinnlich wahrnehmbaren Äußerungen werden als Mitteilungsakte danach beurteilt, ob sie sinnvoll sind bzw. von den am Sprechakt beteiligten Personen als sinnvoll beurteilt werden. Weiter zu klären ist noch, wie ein solches Urteil beschaffen ist. Reformuliere möglichst genau diese Formulierungen zum Ausdruck, der im ersten Schritt zu klären ist.\nAntwort: Ein “sprachlicher Ausdruck” ist eine konkrete, von einer Person geäußerte sprachliche Formulierung, die im Rahmen eines Sprechakts erfolgt. Diese Äußerung wird von anderen Teilnehmern der Kommunikationssituation wahrgenommen und kann von ihnen hinsichtlich ihrer Sinnhaftigkeit im jeweiligen Kontext beurteilt werden. Ein solcher Ausdruck konstituiert sich also durch:\n\nSeine tatsächliche Artikulation durch einen Sprecher\nSeine sinnliche Wahrnehmbarkeit durch andere Kommunikationsteilnehmer\nSeine Beurteilbarkeit bezüglich seiner Sinnhaftigkeit im spezifischen Kontext des Sprechakts\n\nIn Wittgensteins Analyse werden solche Ausdrücke daraufhin untersucht, ob sie im jeweiligen Anwendungskontext (Sprachspiel) als sinnvoll gelten können oder nicht.\n\n\n2.2 Analyse des ersten Abschnitts: “Ich weiß, daß hier ein kranker Mensch liegt?”\nQuery: Angewendet auf die ersten drei Sätze von ÜG 10: Ich weiß, daß hier ein kranker Mensch liegt? Unsinn! Ich sitze an seinem Bett, schaue aufmerksam in seine Züge.\nAntwort: Angewendet auf die ersten drei Sätze von ÜG 10:\nDer sprachliche Ausdruck ist hier “Ich weiß, daß hier ein kranker Mensch liegt?”\nDiese Äußerung wird von Wittgenstein als Beispiel eines konkreten Sprechakts präsentiert, der in einer bestimmten Situation (am Bett eines Kranken sitzend) getätigt werden könnte. Die Äußerung wird unmittelbar mit “Unsinn!” bewertet, was Wittgensteins Sinnhaftigkeitsurteil darstellt. Der dritte Satz “Ich sitze an seinem Bett, schaue aufmerksam in seine Züge” liefert den Anwendungskontext/das Sprachspiel, in dem die Äußerung stattfindet.\nIn diesem Sprachspiel erscheint die Äußerung “Ich weiß, daß hier ein kranker Mensch liegt?” als sinnlos, weil die Situation (direktes Beobachten des Kranken) so unmittelbar ist, dass die explizite Behauptung des Wissens überflüssig wird - der Sprecher nimmt den Kranken direkt wahr, wodurch die Äußerung im Kontext ihre kommunikative Funktion verliert.\nQuery: Die Gliederung ist korrekt: Ausdruck, Sinnhaftigkeitsurteil, Sprachspiel. die nachfolgende Erläuterung ist viel zu vage. Keine “es erscheint”, vielleicht ist es so, es könnte sein. Lasse diesen vagen Unsinn sein. Knappe Sprache, eindeutige Hypothese. Also zunächst halte am Beispiel fest, das nach dem Trippel Ausdruck,Urteil,Sprachspiel gesucht wird. Setze es in einer zweiten Erlätuerung hinterher\nAntwort: Methodisches Tripel am Beispiel ÜG §10 (erste drei Sätze):\nSprachlicher Ausdruck: “Ich weiß, daß hier ein kranker Mensch liegt?”\nSinnhaftigkeitsurteil: “Unsinn!” - Der Ausdruck ist im gegebenen Kontext sinnlos.\nSprachspiel/Anwendungskontext: “Ich sitze an seinem Bett, schaue aufmerksam in seine Züge.” - Situation der unmittelbaren Wahrnehmung des Kranken.\nDie Aussage ist sinnlos, weil in der Situation der direkten Wahrnehmung die Behauptung des Wissens überflüssig ist. Der Sprecher nimmt den Kranken unmittelbar wahr, wodurch die Äußerung ihre kommunikative Funktion verliert. Im Kontext direkter Wahrnehmung ist der Wissensanspruch semantisch leer.\n\n\n2.3 Analyse des zweiten Abschnitts: “So weiß ich also nicht, daß da ein Kranker liegt?”\nQuery: Wie zeigt Wittgenstein, dass beide sinnlos sind? Wie kommst Du darauf, dass zeigen hier begründen heisst?\nAntwort: Wittgenstein zeigt nicht durch eine Begründung, dass beide Ausdrücke sinnlos sind. Er urteilt durch die direkte Feststellung “Es hat weder die Frage noch die Aussage Sinn.” In diesem kurzen Satz liefert er keine explizite Begründung. Er stellt sein Sinnhaftigkeitsurteil fest, ohne es im unmittelbaren Kontext zu begründen.\nQuery: Lese genau!!! Wort für Wort, Satz für Satz, übergehe nichts. die nächste Passage ist: – So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn.\nAntwort: Analyse der Passage: “– So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn.”\nSprachlicher Ausdruck: “So weiß ich also nicht, daß da ein Kranker liegt?”\nSinnhaftigkeitsurteil: “Es hat weder die Frage noch die Aussage Sinn.”\nSprachspiel: Weiterhin der Kontext der direkten Wahrnehmung am Krankenbett.\nQuery: Erläutere, wieso das eine Schlussfolgerung sein soll! Eine Schlussfolgerung ist eine logische Konklusion aus Aussagen, um welche Aussagen oder Thesen könnte es sich handeln.\nAntwort: Diese Aussage ist keine Schlussfolgerung im logischen Sinne.\nAnalyse der Passage: “– So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn.”\nSprachlicher Ausdruck: “So weiß ich also nicht, daß da ein Kranker liegt?”\nSinnhaftigkeitsurteil: “Es hat weder die Frage noch die Aussage Sinn.”\nSprachspiel: Kontext der direkten Wahrnehmung am Krankenbett.\nDiese Frage ist keine Schlussfolgerung, sondern eine Frage, die den Gegensatz zum ersten Ausdruck bildet. Nachdem Wittgenstein den Ausdruck “Ich weiß, daß hier ein kranker Mensch liegt” als unsinnig bezeichnet hat, formuliert er die entgegengesetzte Position: “So weiß ich also nicht, daß da ein Kranker liegt?”\nEs handelt sich um ein Überprüfen der Alternative, nicht um eine logische Konklusion. Wittgenstein verwirft beide Formulierungen - sowohl die Behauptung des Wissens als auch deren Verneinung - als sinnlos in diesem Kontext.\nQuery: Lerne die Sprache präzise zu verwenden. Der erste Ausdruck hat keine Bedeutung, die im Gegensatz oder Widerspruch zum zweiten Ausdruck steht. Das scheint so, weil im ersten “ich weiß, dass p” ausgesagt wird, im zweiten “ich weiß nicht, dass p”. Ein Gegensatz oder Widerspruch liegt vor, wenn die im ersten Satz ausgedrückte Aussage – P – im zweiten negiert wird, also “es ist nicht der Fall, dass P” richtig ist. Das ist nicht richtig, wie Wittgensteins Feststellung zeigt. Trotzdem verwendet Wittgenstein einen schließenden Ausdruck “also”. Damit könnte eine vermeintliche Schlussfolgerung ausgedrückt werden, die aber keine Schlussfolgerung ist, sondern sich als Irrtum erweist. Fasse diese Überlegungen in klaren Worten noch einmal zusammen, ohne Zusätze, ohne Erläuterungen, NUR RICHTIG gleichsinnig auf den Punkt bringen.\nAntwort: Der Ausdruck “So weiß ich also nicht, daß da ein Kranker liegt?” enthält das Wort “also”, das einen Schluss suggeriert. Es wird der Anschein erweckt, als folge aus der Sinnlosigkeit des ersten Ausdrucks “Ich weiß, daß hier ein kranker Mensch liegt?” logisch der zweite. Wittgenstein zeigt jedoch, dass beide Ausdrücke - sowohl die Wissensbehauptung als auch ihre vermeintliche logische Negation - im gegebenen Kontext sinnlos sind. Der zweite Ausdruck ist keine gültige Schlussfolgerung aus der Sinnlosigkeit des ersten, sondern teilt dessen Sinnlosigkeit.\n\n\n2.4 Analyse des dritten Abschnitts: Vergleich mit “Ich bin hier” und “2 × 2 = 4”\nQuery: Behandele diesen Block: So wenig wie die: »Ich bin hier«, die ich doch jeden Moment gebrauchen könnte, wenn sich die passende Gelegenheit dazu ergäbe. – So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten? »2 × 2 = 4« ist ein wahrer Satz der Arithmetik – nicht »bei bestimmten Gelegenheiten« noch »immer« – aber die Laut- oder Schriftzeichen »2 × 2 = 4« könnten im Chinesischen eine andere Bedeutung haben oder aufgelegter Unsinn sein, woraus man sieht: nur im Gebrauch hat der Satz Sinn.\nAntwort: Analyse des Blocks:\n1. Sprachlicher Ausdruck: “Ich bin hier”\nSinnhaftigkeitsurteil: Normalerweise sinnlos, aber sinnvoll “wenn sich die passende Gelegenheit dazu ergäbe”\nSprachspiel: Alltägliche Situationen vs. besondere Situationen, in denen die Betonung der eigenen Anwesenheit kommunikativ notwendig wird\n2. Sprachlicher Ausdruck: “2 × 2 = 4”\nSinnhaftigkeitsurteil, Teil 1 (Frage): “So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten?” - formuliert eine falsche Analogie\nSinnhaftigkeitsurteil, Teil 2 (Antwort): “»2 × 2 = 4« ist ein wahrer Satz der Arithmetik” - aber der Satz hat Sinn nur im jeweiligen Gebrauch\nSprachspiel: Arithmetik als spezifisches Sprachspiel vs. andere mögliche Verwendungen derselben Zeichenfolge (“im Chinesischen”)\nZentrale These: “Nur im Gebrauch hat der Satz Sinn” - Die Sinnhaftigkeit eines Ausdrucks ist an seinen spezifischen Verwendungskontext gebunden, nicht an die bloße Zeichenfolge.\nQuery: Zu 1: Falsch, dass es sinnvoll wäre, wenn sich die Gelegenheit böte. Korrigiere. Zu 2: Falsche Analyse."
+  },
+  {
+    "objectID": "dialog.html#regelwerk-für-die-interpretation",
+    "href": "dialog.html#regelwerk-für-die-interpretation",
+    "title": "Dialog zur Interpretation von ÜG §10",
+    "section": "3 Regelwerk für die Interpretation",
+    "text": "3 Regelwerk für die Interpretation\n\n3.1 Definition grundlegender Begriffe\nEin ‘sprachlicher Ausdruck’ bezeichnet eine spezifische, konkrete sprachliche Äußerung, die als von einer Person innerhalb eines dargestellten oder implizierten Sprechakts getätigt dargestellt wird. Es handelt sich um diejenige Äußerung, die von anderen an der Kommunikation beteiligten Personen sinnlich wahrgenommen wird oder werden könnte und die nachfolgend von diesen Beteiligten im Hinblick auf ihre Sinnhaftigkeit in ebendiesem spezifischen kommunikativen Kontext beurteilt wird.\nSprachlicher Ausdruck: Eine konkrete, von einer Person geäußerte sprachliche Formulierung im Rahmen eines Sprechakts. Bei Wittgenstein handelt es sich meist um Sätze, die im Text durch Anführungszeichen markiert sind und als Beispiele für sprachliche Äußerungen dienen.\nSinnhaftigkeitsurteil: Das direkte Urteil über die Sinnhaftigkeit oder Sinnlosigkeit eines sprachlichen Ausdrucks in seinem spezifischen Anwendungskontext. Bei Wittgenstein oft durch eindeutige Feststellungen wie “Unsinn!” oder “Es hat weder die Frage noch die Aussage Sinn” ausgedrückt.\nSprachspiel/Anwendungskontext: Die konkrete Lebenssituation oder Praxis, in der ein sprachlicher Ausdruck verwendet wird und die für die Beurteilung seiner Sinnhaftigkeit entscheidend ist. Bei Wittgenstein oft durch die Beschreibung einer Situation verdeutlicht.\nAussage: Der propositionale Gehalt eines sprachlichen Ausdrucks, das, was durch ihn behauptet wird. Eine Aussage kann wahr oder falsch sein, jedoch ist die Wahrheit nicht mit Sinnhaftigkeit zu verwechseln.\nGegensatz/Widerspruch: Zwei Aussagen stehen im Widerspruch, wenn eine die Negation der anderen ist. Bei “Ich weiß, dass p” und “Ich weiß nicht, dass p” liegt kein echter logischer Widerspruch vor, wenn beide Ausdrücke in einem Kontext sinnlos sind. Ein scheinbarer Gegensatz kann sich als nicht-existent erweisen, wenn beide Alternativen gleichermaßen sinnlos sind.\nSchlussfolgerung: Eine logische Folgerung, bei der aus gegebenen Prämissen eine Konklusion notwendig folgt. Nicht zu verwechseln mit der Verwendung logischer Konnektoren, die eine Folgerung sprachlich markieren, ohne dass eine logisch zwingende Beziehung bestehen muss.\n“Also” als logischer Konnektor: “Also” verbindet Aussagen und zeigt eine Schlussfolgerungsbeziehung an. In der Verwendung “So weiß ich also nicht…” markiert es eine vermeintliche logische Konsequenz, die Wittgenstein jedoch als ungültig zurückweist, da beide verbundenen Ausdrücke im gegebenen Kontext sinnlos sind.\nBegründung vs. Feststellung: Eine Begründung liefert Gründe für ein Urteil, während eine Feststellung ein Urteil ohne explizite Begründung ausspricht. Bei Wittgensteins Sinnhaftigkeitsurteilen handelt es sich oft um Feststellungen ohne unmittelbare Begründung im Textabschnitt."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Über Gewissheit - Wittgenstein ausgelegt",
+    "section": "",
+    "text": "Willkommen zum Seminar über Ludwig Wittgensteins “Über Gewissheit”. Diese Sammlung enthält Materialien zur Entstehungsgeschichte, Editionsgeschichte und philosophischen Bedeutung von Wittgensteins letztem Werk - besser Manuskript.",
+    "crumbs": [
+      "Startseite",
+      "**Überblick**",
+      "Über Gewissheit - Wittgenstein ausgelegt"
+    ]
+  },
+  {
+    "objectID": "index.html#über-das-seminar",
+    "href": "index.html#über-das-seminar",
+    "title": "Über Gewissheit - Wittgenstein ausgelegt",
+    "section": "1.1 Über das Seminar",
+    "text": "1.1 Über das Seminar\nDieses Seminar behandelt Wittgensteins erkenntnistheoretische Untersuchungen in “Über Gewissheit”. Wir werden die komplexe Entstehungsgeschichte des Textes betrachten und die philosophischen Ideen im Kontext von Wittgensteins Spätphilosophie diskutieren.\nBesondere Aufmerksamkeit wird den folgenden Aspekten gewidmet:\n\nDie Reaktion Wittgensteins auf G.E. Moores Verteidigung des Common Sense\nDie Entwicklung des Konzepts der “Angelsätze” oder Gewissheiten\nDie sozialen und pragmatischen Aspekte von Wissen und Gewissheit\nDie Verbindung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit”",
+    "crumbs": [
+      "Startseite",
+      "**Überblick**",
+      "Über Gewissheit - Wittgenstein ausgelegt"
+    ]
+  },
+  {
+    "objectID": "index.html#quellen",
+    "href": "index.html#quellen",
+    "title": "Über Gewissheit - Wittgenstein ausgelegt",
+    "section": "1.2 Quellen",
+    "text": "1.2 Quellen\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\nMoore: A Defence of Common Sense",
+    "crumbs": [
+      "Startseite",
+      "**Überblick**",
+      "Über Gewissheit - Wittgenstein ausgelegt"
+    ]
+  },
+  {
+    "objectID": "index.html#der-ai-reporter-eine-experimentelle-methode-der-dokumentation",
+    "href": "index.html#der-ai-reporter-eine-experimentelle-methode-der-dokumentation",
+    "title": "Über Gewissheit - Wittgenstein ausgelegt",
+    "section": "1.3 Der AI-Reporter: Eine experimentelle Methode der Dokumentation",
+    "text": "1.3 Der AI-Reporter: Eine experimentelle Methode der Dokumentation\nDer Begriff “Reportage” für die Sitzungszusammenfassungen leitet sich von einer experimentellen Neuentwicklung ab: dem AI-Reporter. Dieser erstellt auf Grundlage der Seminarmaterialien und Audioaufnahmen der Diskussionsverläufe Berichte, die inhaltlich möglichst genau die erzielten Thesen, Auslegungen, Varianten und Begründungen darstellen. Gegebenenfalls werden auch kontroverse Diskussionen dokumentiert.\nBei den AI-Reportagen handelt es sich nicht um wortwörtliche Protokolle des Diskussionsverlaufs, sondern um inhaltliche Zusammenfassungen der Diskussionsthematik, ihrer Dynamik und der Entwicklung von Thesen und Textauslegungen. Dieser experimentelle Zugang hat das Ziel, die lebhafte thematische Auseinandersetzung mit Wittgensteins Spätschriften möglichst gehaltvoll und nachvollziehbar zu dokumentieren und für das weitere Nachstudium zu erhalten.",
+    "crumbs": [
+      "Startseite",
+      "**Überblick**",
+      "Über Gewissheit - Wittgenstein ausgelegt"
+    ]
+  },
+  {
     "objectID": "sitzung1.html",
     "href": "sitzung1.html",
     "title": "Sitzung 1: Einführung in ‘Über Gewissheit’",
@@ -258,178 +538,6 @@
       "Startseite",
       "**Seminar**",
       "Sitzung 1: Einführung in 'Über Gewissheit'"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "",
-    "text": "Willkommen zum Seminar über Ludwig Wittgensteins “Über Gewissheit”. Diese Sammlung enthält Materialien zur Entstehungsgeschichte, Editionsgeschichte und philosophischen Bedeutung von Wittgensteins letztem Werk - besser Manuskript.",
-    "crumbs": [
-      "Startseite",
-      "**Überblick**",
-      "Über Gewissheit - Wittgenstein ausgelegt"
-    ]
-  },
-  {
-    "objectID": "index.html#über-das-seminar",
-    "href": "index.html#über-das-seminar",
-    "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "1.1 Über das Seminar",
-    "text": "1.1 Über das Seminar\nDieses Seminar behandelt Wittgensteins erkenntnistheoretische Untersuchungen in “Über Gewissheit”. Wir werden die komplexe Entstehungsgeschichte des Textes betrachten und die philosophischen Ideen im Kontext von Wittgensteins Spätphilosophie diskutieren.\nBesondere Aufmerksamkeit wird den folgenden Aspekten gewidmet:\n\nDie Reaktion Wittgensteins auf G.E. Moores Verteidigung des Common Sense\nDie Entwicklung des Konzepts der “Angelsätze” oder Gewissheiten\nDie sozialen und pragmatischen Aspekte von Wissen und Gewissheit\nDie Verbindung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit”",
-    "crumbs": [
-      "Startseite",
-      "**Überblick**",
-      "Über Gewissheit - Wittgenstein ausgelegt"
-    ]
-  },
-  {
-    "objectID": "index.html#quellen",
-    "href": "index.html#quellen",
-    "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "1.2 Quellen",
-    "text": "1.2 Quellen\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\nMoore: A Defence of Common Sense",
-    "crumbs": [
-      "Startseite",
-      "**Überblick**",
-      "Über Gewissheit - Wittgenstein ausgelegt"
-    ]
-  },
-  {
-    "objectID": "index.html#der-ai-reporter-eine-experimentelle-methode-der-dokumentation",
-    "href": "index.html#der-ai-reporter-eine-experimentelle-methode-der-dokumentation",
-    "title": "Über Gewissheit - Wittgenstein ausgelegt",
-    "section": "1.3 Der AI-Reporter: Eine experimentelle Methode der Dokumentation",
-    "text": "1.3 Der AI-Reporter: Eine experimentelle Methode der Dokumentation\nDer Begriff “Reportage” für die Sitzungszusammenfassungen leitet sich von einer experimentellen Neuentwicklung ab: dem AI-Reporter. Dieser erstellt auf Grundlage der Seminarmaterialien und Audioaufnahmen der Diskussionsverläufe Berichte, die inhaltlich möglichst genau die erzielten Thesen, Auslegungen, Varianten und Begründungen darstellen. Gegebenenfalls werden auch kontroverse Diskussionen dokumentiert.\nBei den AI-Reportagen handelt es sich nicht um wortwörtliche Protokolle des Diskussionsverlaufs, sondern um inhaltliche Zusammenfassungen der Diskussionsthematik, ihrer Dynamik und der Entwicklung von Thesen und Textauslegungen. Dieser experimentelle Zugang hat das Ziel, die lebhafte thematische Auseinandersetzung mit Wittgensteins Spätschriften möglichst gehaltvoll und nachvollziehbar zu dokumentieren und für das weitere Nachstudium zu erhalten.",
-    "crumbs": [
-      "Startseite",
-      "**Überblick**",
-      "Über Gewissheit - Wittgenstein ausgelegt"
-    ]
-  },
-  {
-    "objectID": "dialog.html",
-    "href": "dialog.html",
-    "title": "Dialog zur Interpretation von ÜG §10",
-    "section": "",
-    "text": "Ich weiß, daß hier ein kranker Mensch liegt? Unsinn! Ich sitze an seinem Bett, schaue aufmerksam in seine Züge. – So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn. So wenig wie die: »Ich bin hier«, die ich doch jeden Moment gebrauchen könnte, wenn sich die passende Gelegenheit dazu ergäbe. – So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten? »2 × 2 = 4« ist ein wahrer Satz der Arithmetik – nicht »bei bestimmten Gelegenheiten« noch »immer« – aber die Laut- oder Schriftzeichen »2 × 2 = 4« könnten im Chinesischen eine andere Bedeutung haben oder aufgelegter Unsinn sein, woraus man sieht: nur im Gebrauch hat der Satz Sinn. Und »Ich weiß, daß hier ein Kranker liegt«, in der unpassenden Situation gebraucht, erscheint nur darum nicht als Unsinn, vielmehr als Selbstverständlichkeit, weil man sich verhältnismäßig leicht eine für ihn passende Situation vorstellen kann und weil man meint, die Worte »Ich weiß, daß …« seien überall am Platz, wo es keinen Zweifel gibt (also auch dort, wo der Ausdruck des Zweifels verständlich wäre)."
-  },
-  {
-    "objectID": "dialog.html#textgrundlage-wittgenstein-üg-10",
-    "href": "dialog.html#textgrundlage-wittgenstein-üg-10",
-    "title": "Dialog zur Interpretation von ÜG §10",
-    "section": "",
-    "text": "Ich weiß, daß hier ein kranker Mensch liegt? Unsinn! Ich sitze an seinem Bett, schaue aufmerksam in seine Züge. – So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn. So wenig wie die: »Ich bin hier«, die ich doch jeden Moment gebrauchen könnte, wenn sich die passende Gelegenheit dazu ergäbe. – So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten? »2 × 2 = 4« ist ein wahrer Satz der Arithmetik – nicht »bei bestimmten Gelegenheiten« noch »immer« – aber die Laut- oder Schriftzeichen »2 × 2 = 4« könnten im Chinesischen eine andere Bedeutung haben oder aufgelegter Unsinn sein, woraus man sieht: nur im Gebrauch hat der Satz Sinn. Und »Ich weiß, daß hier ein Kranker liegt«, in der unpassenden Situation gebraucht, erscheint nur darum nicht als Unsinn, vielmehr als Selbstverständlichkeit, weil man sich verhältnismäßig leicht eine für ihn passende Situation vorstellen kann und weil man meint, die Worte »Ich weiß, daß …« seien überall am Platz, wo es keinen Zweifel gibt (also auch dort, wo der Ausdruck des Zweifels verständlich wäre)."
-  },
-  {
-    "objectID": "dialog.html#dialog-zur-analyse",
-    "href": "dialog.html#dialog-zur-analyse",
-    "title": "Dialog zur Interpretation von ÜG §10",
-    "section": "2 Dialog zur Analyse",
-    "text": "2 Dialog zur Analyse\n\n2.1 Begriffsklärung: Sprachlicher Ausdruck\nQuery: Die Aufgabe, einen “sprachlichen Ausdruck” zu identifizieren, verlangt Klärung. So ist er für den Zweck vollkommen unbrauchbar. Erstens: Es geht um sprachliche Ausdrücke, die von Personen in Akten des Sprechens geäußert werden, d.h. die von anderen sinnlich wahrgenommen werden. Diese sinnlich wahrnehmbaren Äußerungen werden als Mitteilungsakte danach beurteilt, ob sie sinnvoll sind bzw. von den am Sprechakt beteiligten Personen als sinnvoll beurteilt werden. Weiter zu klären ist noch, wie ein solches Urteil beschaffen ist. Reformuliere möglichst genau diese Formulierungen zum Ausdruck, der im ersten Schritt zu klären ist.\nAntwort: Ein “sprachlicher Ausdruck” ist eine konkrete, von einer Person geäußerte sprachliche Formulierung, die im Rahmen eines Sprechakts erfolgt. Diese Äußerung wird von anderen Teilnehmern der Kommunikationssituation wahrgenommen und kann von ihnen hinsichtlich ihrer Sinnhaftigkeit im jeweiligen Kontext beurteilt werden. Ein solcher Ausdruck konstituiert sich also durch:\n\nSeine tatsächliche Artikulation durch einen Sprecher\nSeine sinnliche Wahrnehmbarkeit durch andere Kommunikationsteilnehmer\nSeine Beurteilbarkeit bezüglich seiner Sinnhaftigkeit im spezifischen Kontext des Sprechakts\n\nIn Wittgensteins Analyse werden solche Ausdrücke daraufhin untersucht, ob sie im jeweiligen Anwendungskontext (Sprachspiel) als sinnvoll gelten können oder nicht.\n\n\n2.2 Analyse des ersten Abschnitts: “Ich weiß, daß hier ein kranker Mensch liegt?”\nQuery: Angewendet auf die ersten drei Sätze von ÜG 10: Ich weiß, daß hier ein kranker Mensch liegt? Unsinn! Ich sitze an seinem Bett, schaue aufmerksam in seine Züge.\nAntwort: Angewendet auf die ersten drei Sätze von ÜG 10:\nDer sprachliche Ausdruck ist hier “Ich weiß, daß hier ein kranker Mensch liegt?”\nDiese Äußerung wird von Wittgenstein als Beispiel eines konkreten Sprechakts präsentiert, der in einer bestimmten Situation (am Bett eines Kranken sitzend) getätigt werden könnte. Die Äußerung wird unmittelbar mit “Unsinn!” bewertet, was Wittgensteins Sinnhaftigkeitsurteil darstellt. Der dritte Satz “Ich sitze an seinem Bett, schaue aufmerksam in seine Züge” liefert den Anwendungskontext/das Sprachspiel, in dem die Äußerung stattfindet.\nIn diesem Sprachspiel erscheint die Äußerung “Ich weiß, daß hier ein kranker Mensch liegt?” als sinnlos, weil die Situation (direktes Beobachten des Kranken) so unmittelbar ist, dass die explizite Behauptung des Wissens überflüssig wird - der Sprecher nimmt den Kranken direkt wahr, wodurch die Äußerung im Kontext ihre kommunikative Funktion verliert.\nQuery: Die Gliederung ist korrekt: Ausdruck, Sinnhaftigkeitsurteil, Sprachspiel. die nachfolgende Erläuterung ist viel zu vage. Keine “es erscheint”, vielleicht ist es so, es könnte sein. Lasse diesen vagen Unsinn sein. Knappe Sprache, eindeutige Hypothese. Also zunächst halte am Beispiel fest, das nach dem Trippel Ausdruck,Urteil,Sprachspiel gesucht wird. Setze es in einer zweiten Erlätuerung hinterher\nAntwort: Methodisches Tripel am Beispiel ÜG §10 (erste drei Sätze):\nSprachlicher Ausdruck: “Ich weiß, daß hier ein kranker Mensch liegt?”\nSinnhaftigkeitsurteil: “Unsinn!” - Der Ausdruck ist im gegebenen Kontext sinnlos.\nSprachspiel/Anwendungskontext: “Ich sitze an seinem Bett, schaue aufmerksam in seine Züge.” - Situation der unmittelbaren Wahrnehmung des Kranken.\nDie Aussage ist sinnlos, weil in der Situation der direkten Wahrnehmung die Behauptung des Wissens überflüssig ist. Der Sprecher nimmt den Kranken unmittelbar wahr, wodurch die Äußerung ihre kommunikative Funktion verliert. Im Kontext direkter Wahrnehmung ist der Wissensanspruch semantisch leer.\n\n\n2.3 Analyse des zweiten Abschnitts: “So weiß ich also nicht, daß da ein Kranker liegt?”\nQuery: Wie zeigt Wittgenstein, dass beide sinnlos sind? Wie kommst Du darauf, dass zeigen hier begründen heisst?\nAntwort: Wittgenstein zeigt nicht durch eine Begründung, dass beide Ausdrücke sinnlos sind. Er urteilt durch die direkte Feststellung “Es hat weder die Frage noch die Aussage Sinn.” In diesem kurzen Satz liefert er keine explizite Begründung. Er stellt sein Sinnhaftigkeitsurteil fest, ohne es im unmittelbaren Kontext zu begründen.\nQuery: Lese genau!!! Wort für Wort, Satz für Satz, übergehe nichts. die nächste Passage ist: – So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn.\nAntwort: Analyse der Passage: “– So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn.”\nSprachlicher Ausdruck: “So weiß ich also nicht, daß da ein Kranker liegt?”\nSinnhaftigkeitsurteil: “Es hat weder die Frage noch die Aussage Sinn.”\nSprachspiel: Weiterhin der Kontext der direkten Wahrnehmung am Krankenbett.\nQuery: Erläutere, wieso das eine Schlussfolgerung sein soll! Eine Schlussfolgerung ist eine logische Konklusion aus Aussagen, um welche Aussagen oder Thesen könnte es sich handeln.\nAntwort: Diese Aussage ist keine Schlussfolgerung im logischen Sinne.\nAnalyse der Passage: “– So weiß ich also nicht, daß da ein Kranker liegt? – Es hat weder die Frage noch die Aussage Sinn.”\nSprachlicher Ausdruck: “So weiß ich also nicht, daß da ein Kranker liegt?”\nSinnhaftigkeitsurteil: “Es hat weder die Frage noch die Aussage Sinn.”\nSprachspiel: Kontext der direkten Wahrnehmung am Krankenbett.\nDiese Frage ist keine Schlussfolgerung, sondern eine Frage, die den Gegensatz zum ersten Ausdruck bildet. Nachdem Wittgenstein den Ausdruck “Ich weiß, daß hier ein kranker Mensch liegt” als unsinnig bezeichnet hat, formuliert er die entgegengesetzte Position: “So weiß ich also nicht, daß da ein Kranker liegt?”\nEs handelt sich um ein Überprüfen der Alternative, nicht um eine logische Konklusion. Wittgenstein verwirft beide Formulierungen - sowohl die Behauptung des Wissens als auch deren Verneinung - als sinnlos in diesem Kontext.\nQuery: Lerne die Sprache präzise zu verwenden. Der erste Ausdruck hat keine Bedeutung, die im Gegensatz oder Widerspruch zum zweiten Ausdruck steht. Das scheint so, weil im ersten “ich weiß, dass p” ausgesagt wird, im zweiten “ich weiß nicht, dass p”. Ein Gegensatz oder Widerspruch liegt vor, wenn die im ersten Satz ausgedrückte Aussage – P – im zweiten negiert wird, also “es ist nicht der Fall, dass P” richtig ist. Das ist nicht richtig, wie Wittgensteins Feststellung zeigt. Trotzdem verwendet Wittgenstein einen schließenden Ausdruck “also”. Damit könnte eine vermeintliche Schlussfolgerung ausgedrückt werden, die aber keine Schlussfolgerung ist, sondern sich als Irrtum erweist. Fasse diese Überlegungen in klaren Worten noch einmal zusammen, ohne Zusätze, ohne Erläuterungen, NUR RICHTIG gleichsinnig auf den Punkt bringen.\nAntwort: Der Ausdruck “So weiß ich also nicht, daß da ein Kranker liegt?” enthält das Wort “also”, das einen Schluss suggeriert. Es wird der Anschein erweckt, als folge aus der Sinnlosigkeit des ersten Ausdrucks “Ich weiß, daß hier ein kranker Mensch liegt?” logisch der zweite. Wittgenstein zeigt jedoch, dass beide Ausdrücke - sowohl die Wissensbehauptung als auch ihre vermeintliche logische Negation - im gegebenen Kontext sinnlos sind. Der zweite Ausdruck ist keine gültige Schlussfolgerung aus der Sinnlosigkeit des ersten, sondern teilt dessen Sinnlosigkeit.\n\n\n2.4 Analyse des dritten Abschnitts: Vergleich mit “Ich bin hier” und “2 × 2 = 4”\nQuery: Behandele diesen Block: So wenig wie die: »Ich bin hier«, die ich doch jeden Moment gebrauchen könnte, wenn sich die passende Gelegenheit dazu ergäbe. – So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten? »2 × 2 = 4« ist ein wahrer Satz der Arithmetik – nicht »bei bestimmten Gelegenheiten« noch »immer« – aber die Laut- oder Schriftzeichen »2 × 2 = 4« könnten im Chinesischen eine andere Bedeutung haben oder aufgelegter Unsinn sein, woraus man sieht: nur im Gebrauch hat der Satz Sinn.\nAntwort: Analyse des Blocks:\n1. Sprachlicher Ausdruck: “Ich bin hier”\nSinnhaftigkeitsurteil: Normalerweise sinnlos, aber sinnvoll “wenn sich die passende Gelegenheit dazu ergäbe”\nSprachspiel: Alltägliche Situationen vs. besondere Situationen, in denen die Betonung der eigenen Anwesenheit kommunikativ notwendig wird\n2. Sprachlicher Ausdruck: “2 × 2 = 4”\nSinnhaftigkeitsurteil, Teil 1 (Frage): “So ist also auch »2 × 2 = 4« Unsinn und kein wahrer arithmetischer Satz, außer bei bestimmten Gelegenheiten?” - formuliert eine falsche Analogie\nSinnhaftigkeitsurteil, Teil 2 (Antwort): “»2 × 2 = 4« ist ein wahrer Satz der Arithmetik” - aber der Satz hat Sinn nur im jeweiligen Gebrauch\nSprachspiel: Arithmetik als spezifisches Sprachspiel vs. andere mögliche Verwendungen derselben Zeichenfolge (“im Chinesischen”)\nZentrale These: “Nur im Gebrauch hat der Satz Sinn” - Die Sinnhaftigkeit eines Ausdrucks ist an seinen spezifischen Verwendungskontext gebunden, nicht an die bloße Zeichenfolge.\nQuery: Zu 1: Falsch, dass es sinnvoll wäre, wenn sich die Gelegenheit böte. Korrigiere. Zu 2: Falsche Analyse."
-  },
-  {
-    "objectID": "dialog.html#regelwerk-für-die-interpretation",
-    "href": "dialog.html#regelwerk-für-die-interpretation",
-    "title": "Dialog zur Interpretation von ÜG §10",
-    "section": "3 Regelwerk für die Interpretation",
-    "text": "3 Regelwerk für die Interpretation\n\n3.1 Definition grundlegender Begriffe\nEin ‘sprachlicher Ausdruck’ bezeichnet eine spezifische, konkrete sprachliche Äußerung, die als von einer Person innerhalb eines dargestellten oder implizierten Sprechakts getätigt dargestellt wird. Es handelt sich um diejenige Äußerung, die von anderen an der Kommunikation beteiligten Personen sinnlich wahrgenommen wird oder werden könnte und die nachfolgend von diesen Beteiligten im Hinblick auf ihre Sinnhaftigkeit in ebendiesem spezifischen kommunikativen Kontext beurteilt wird.\nSprachlicher Ausdruck: Eine konkrete, von einer Person geäußerte sprachliche Formulierung im Rahmen eines Sprechakts. Bei Wittgenstein handelt es sich meist um Sätze, die im Text durch Anführungszeichen markiert sind und als Beispiele für sprachliche Äußerungen dienen.\nSinnhaftigkeitsurteil: Das direkte Urteil über die Sinnhaftigkeit oder Sinnlosigkeit eines sprachlichen Ausdrucks in seinem spezifischen Anwendungskontext. Bei Wittgenstein oft durch eindeutige Feststellungen wie “Unsinn!” oder “Es hat weder die Frage noch die Aussage Sinn” ausgedrückt.\nSprachspiel/Anwendungskontext: Die konkrete Lebenssituation oder Praxis, in der ein sprachlicher Ausdruck verwendet wird und die für die Beurteilung seiner Sinnhaftigkeit entscheidend ist. Bei Wittgenstein oft durch die Beschreibung einer Situation verdeutlicht.\nAussage: Der propositionale Gehalt eines sprachlichen Ausdrucks, das, was durch ihn behauptet wird. Eine Aussage kann wahr oder falsch sein, jedoch ist die Wahrheit nicht mit Sinnhaftigkeit zu verwechseln.\nGegensatz/Widerspruch: Zwei Aussagen stehen im Widerspruch, wenn eine die Negation der anderen ist. Bei “Ich weiß, dass p” und “Ich weiß nicht, dass p” liegt kein echter logischer Widerspruch vor, wenn beide Ausdrücke in einem Kontext sinnlos sind. Ein scheinbarer Gegensatz kann sich als nicht-existent erweisen, wenn beide Alternativen gleichermaßen sinnlos sind.\nSchlussfolgerung: Eine logische Folgerung, bei der aus gegebenen Prämissen eine Konklusion notwendig folgt. Nicht zu verwechseln mit der Verwendung logischer Konnektoren, die eine Folgerung sprachlich markieren, ohne dass eine logisch zwingende Beziehung bestehen muss.\n“Also” als logischer Konnektor: “Also” verbindet Aussagen und zeigt eine Schlussfolgerungsbeziehung an. In der Verwendung “So weiß ich also nicht…” markiert es eine vermeintliche logische Konsequenz, die Wittgenstein jedoch als ungültig zurückweist, da beide verbundenen Ausdrücke im gegebenen Kontext sinnlos sind.\nBegründung vs. Feststellung: Eine Begründung liefert Gründe für ein Urteil, während eine Feststellung ein Urteil ohne explizite Begründung ausspricht. Bei Wittgensteins Sinnhaftigkeitsurteilen handelt es sich oft um Feststellungen ohne unmittelbare Begründung im Textabschnitt."
-  },
-  {
-    "objectID": "faksimile.html",
-    "href": "faksimile.html",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Die digitale Plattform “Wittgenstein Source” bietet freien Zugang zu Wittgensteins philosophischen Manuskripten, seinen sogenannten “Nachlass”. Die Plattform wird vom Wittgenstein-Archiv der Universität Bergen (WAB) entwickelt und betrieben.\n\n\nKuratoren: - Alois Pichler (2009–, Wittgenstein Archives at the University of Bergen) - Joseph Wang (2020–, Research Institute Brenner-Archiv, Innsbruck)\nFür die optimale Nutzung von Wittgenstein Source wird auf Windows-Systemen Chrome und auf Mac-Systemen Safari empfohlen.\n\n\n\nWittgenstein Source bietet freien Zugang zu den primären Quellen von Wittgensteins Werk, einschließlich Faksimiles und Textausgaben seiner philosophischen Manuskripte. Das Projekt ist eine Kooperation zwischen dem Wittgenstein-Archiv der Universität Bergen (WAB), Joseph Wang, der Abteilung für digitale Dienste der Universitätsbibliothek Bergen und net7.\nDie Startseite und der Header von Wittgenstein Source verwenden ein Foto von Ben Richards, das Wittgenstein 1947 in Swansea zeigt. Das Foto wird mit freundlicher Genehmigung von Michael Nedo und dem Cambridge Wittgenstein Archive verwendet.\n\n\n\nSeit Oktober 2019 ist folgende Edition verfügbar: - (2015-) Wittgenstein Source Bergen Nachlass Edition\n\n\n\nEin besonders interessantes Dokument im Kontext unserer Untersuchung zu “Über Gewissheit” ist das Manuskript MS 172, das die ersten 65 Paragraphen des später veröffentlichten Werks enthält.\nDas Faksimile des MS 172 ist unter folgendem Link zugänglich: Wittgenstein Source MS 172\n\n\n\nBeispielseite aus MS 172\n\n\n\n\n\nDie digitale Verfügbarkeit der Originalmanuskripte ermöglicht:\n\nEine kritische Überprüfung der editorischen Entscheidungen der ursprünglichen Herausgeber\nDas Erkennen von Zusammenhängen zwischen Texten, die in der publizierten Fassung getrennt wurden\nDie Analyse von Wittgensteins Arbeitsprozess durch Überarbeitungen und Streichungen\nEin tieferes Verständnis der chronologischen Entwicklung seiner Gedanken\n\nDie Nutzung dieser digitalen Ressourcen ist für eine gründliche Untersuchung von “Über Gewissheit” von unschätzbarem Wert, insbesondere um die künstliche Trennung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit” zu überwinden.\n\n\n\nBei Fragen zur Plattform wenden Sie sich an: - alois.pichler@uib.no - Joseph.Wang@uibk.ac.at",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "faksimile.html#kuratoren-und-technische-information",
-    "href": "faksimile.html#kuratoren-und-technische-information",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Kuratoren: - Alois Pichler (2009–, Wittgenstein Archives at the University of Bergen) - Joseph Wang (2020–, Research Institute Brenner-Archiv, Innsbruck)\nFür die optimale Nutzung von Wittgenstein Source wird auf Windows-Systemen Chrome und auf Mac-Systemen Safari empfohlen.",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "faksimile.html#über-die-plattform",
-    "href": "faksimile.html#über-die-plattform",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Wittgenstein Source bietet freien Zugang zu den primären Quellen von Wittgensteins Werk, einschließlich Faksimiles und Textausgaben seiner philosophischen Manuskripte. Das Projekt ist eine Kooperation zwischen dem Wittgenstein-Archiv der Universität Bergen (WAB), Joseph Wang, der Abteilung für digitale Dienste der Universitätsbibliothek Bergen und net7.\nDie Startseite und der Header von Wittgenstein Source verwenden ein Foto von Ben Richards, das Wittgenstein 1947 in Swansea zeigt. Das Foto wird mit freundlicher Genehmigung von Michael Nedo und dem Cambridge Wittgenstein Archive verwendet.",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "faksimile.html#verfügbare-editionen",
-    "href": "faksimile.html#verfügbare-editionen",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Seit Oktober 2019 ist folgende Edition verfügbar: - (2015-) Wittgenstein Source Bergen Nachlass Edition",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "faksimile.html#faksimile-ms-172",
-    "href": "faksimile.html#faksimile-ms-172",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Ein besonders interessantes Dokument im Kontext unserer Untersuchung zu “Über Gewissheit” ist das Manuskript MS 172, das die ersten 65 Paragraphen des später veröffentlichten Werks enthält.\nDas Faksimile des MS 172 ist unter folgendem Link zugänglich: Wittgenstein Source MS 172\n\n\n\nBeispielseite aus MS 172",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "faksimile.html#bedeutung-für-die-forschung",
-    "href": "faksimile.html#bedeutung-für-die-forschung",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Die digitale Verfügbarkeit der Originalmanuskripte ermöglicht:\n\nEine kritische Überprüfung der editorischen Entscheidungen der ursprünglichen Herausgeber\nDas Erkennen von Zusammenhängen zwischen Texten, die in der publizierten Fassung getrennt wurden\nDie Analyse von Wittgensteins Arbeitsprozess durch Überarbeitungen und Streichungen\nEin tieferes Verständnis der chronologischen Entwicklung seiner Gedanken\n\nDie Nutzung dieser digitalen Ressourcen ist für eine gründliche Untersuchung von “Über Gewissheit” von unschätzbarem Wert, insbesondere um die künstliche Trennung zwischen den “Bemerkungen über die Farben” und “Über Gewissheit” zu überwinden.",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "faksimile.html#kontakt",
-    "href": "faksimile.html#kontakt",
-    "title": "Wittgenstein Source",
-    "section": "",
-    "text": "Bei Fragen zur Plattform wenden Sie sich an: - alois.pichler@uib.no - Joseph.Wang@uibk.ac.at",
-    "crumbs": [
-      "Startseite",
-      "**Manuskript und Editionsgeschichte**",
-      "Wittgenstein Source"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Literaturverzeichnis",
-    "section": "",
-    "text": "1 Literaturverzeichnis\nHier finden Sie eine vollständige Liste aller in diesem Seminar verwendeten Literatur. Die Einträge sind alphabetisch sortiert und umfassen sowohl Primärquellen von Wittgenstein als auch Sekundärliteratur zu “Über Gewissheit” und verwandten Themen.\n\n\nKeicher, Peter. 2001. “Die Wittgenstein-Werkausgabe Und Ihre Quellen Im Nachlaß.” ALWS - Papers of the International Wittgenstein Symposium 1 (1). https://wab.uib.no/agora/tools/alws/collection-1-issue-1-article-20.annotate.\n\n\nMalcolm, Norman. 1977. “Moore and Wittgenstein on the Sense of ’i Know’.” In Thought and Knowledge. Ithaca: Cornell University Press.\n\n\nMcGinn, Marie. 1989. “Sense and Certainty.” Proceedings of the Aristotelian Society 89: 235–52.\n\n\nMoore, G. E. 1925. “A Defence of Common Sense.” Edited by J. H. Muirhead. Contemporary British Philosophy.\n\n\nPichler, Alois. 2002. “Wittgenstein’s Nachlass: The Bergen Electronic Edition.” Nordic Wittgenstein Review.\n\n\nStroll, Avrum. 1994. Moore and Wittgenstein on Certainty. New York; Oxford: Oxford University Press.\n\n\nWittgenstein, Ludwig. 1953. Philosophical Investigations. Translated by G. E. M. Anscombe. Oxford: Basil Blackwell.\n\n\n———. 1969. On Certainty. Edited by G. E. M. Anscombe and G. H. von Wright. Oxford: Basil Blackwell.\n\n\nMoore: A Defence of Common Sense\n\n1.0.1 Digitale Ressourcen\n\nWittgenstein Source - Freier Zugang zu Faksimiles ausgewählter Manuskripte aus dem Nachlass\nWittgenstein Archives at the University of Bergen (WAB) - Führendes Forschungszentrum für Wittgenstein-Studien\nWittgenstein Advanced Search Tools - Suchtools für den transkribierten Nachlass\n\n\n\n1.0.2 Empfohlene Einführungen\n\nGlock, H.-J. (1996). A Wittgenstein Dictionary. Oxford: Blackwell.\nHacker, P. M. S. (1996). Wittgenstein’s Place in Twentieth-Century Analytic Philosophy. Oxford: Blackwell.\nSchulte, J. (1989). Wittgenstein: Eine Einführung. Stuttgart: Reclam.",
-    "crumbs": [
-      "Startseite",
-      "**Anhang**",
-      "Literaturverzeichnis"
     ]
   },
   {
